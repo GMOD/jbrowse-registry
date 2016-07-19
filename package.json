@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "bower install",
+    "build_api": "python scripts/prepare_api.py < plugins.yaml > app/api/plugins.json",
     "build": "grunt"
   },
   "repository": {
