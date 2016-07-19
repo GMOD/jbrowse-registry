@@ -2,7 +2,26 @@
   "name": "jbrowse-plugin-repo",
   "dependencies": {
     "angular": "^1.5.7",
-    "bootstrap": "^3.3.6",
-    "angularUtils-pagination": "angular-utils-pagination#^0.11.1"
-  }
+    "bootstrap": "^3.3.6"
+  },
+  "homepage": "https://github.com/awilkey/pluginapp",
+  "authors": [
+    "Andrew Wilkey <awilkey@iastate.edu>"
+  ],
+  "description": "A directory of JBrowse plugins",
+  "main": "index.html",
+  "keywords": [
+    "genomics",
+    "plugin",
+    "directory"
+  ],
+  "license": "BSD-2-Clause",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }
