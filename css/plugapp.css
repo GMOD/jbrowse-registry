@@ -4,16 +4,6 @@ header{
     color: 'green';
     margin-bottom: 1em;
 }
-.filter-form{
-	align-text:center;
-}
-.form-group{
-	margin-left:.7em;
-}
-.contact{
-    text-align:center;
-    margin-top:3em;
-}
 header .intro-text{
     margin-top:3.5em;
     margin-bottom:3.5em;
@@ -34,58 +24,6 @@ header .intro-heading{
 }
 
 
-
-#page-header{
-    text-align:center;
-    padding:1.5em
-}
-
-
-.list-group-item{
-    background-color:#FFF;
-    border: 1px solid #ddd;
-    display: block;
-    padding: 1em 1en;
-    position: relative;
-    overflow-wrap:break-word;
-    word-wrap:break-word;
-    word-break:break-word;
-}
-
-.plugin-list:first-child{
- border-top-left-radius: .5em;
- border-top-right-radius: .5em;
-}
-
-.plugin-list:last-child{
- border-top-left-radius: .5em;
- border-top-right-radius: .5em;
-}
-
 .input-group{
-    margin-top:1em;
-    margin-bottom:1em;
-}
-
-.input-group-addon{
-    top:0px;
-}
-
-.tab-nav{
-    margin-bottom:1.5em;
-}
-
-.page-div{
-   text-align:center;
-}
-
-.filter-group{
-    margin-bottom:1em;
-}
-.per-page{
-    float:right;
-}
-
-.per-page-control{
-     max-width:4em;
+    margin: 1em;
 }
