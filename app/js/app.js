@@ -8,14 +8,14 @@ app.controller("PluginController",function(){
 app.directive("pluginList", ['$http',function($http){
     return {
         restrict:"E",
-        templateUrl:"../partials/plugin-list.html",
+        templateUrl:"partials/plugin-list.html",
         controller: function($http){
             var self = this;
             self.filter = {gmod:"", term:"", perPage:10};
             self.sortKey = "name";
             self.order ='+';
 
-            $http.get('../api/plugins.json')
+            $http.get('api/plugins.json')
                 .success(function(data){
                     self.plugins = data;
                 })

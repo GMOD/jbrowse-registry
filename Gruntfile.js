@@ -18,7 +18,7 @@ module.exports = function (grunt)
         },
 
         useminPrepare: {
-            html: 'app/index.html'
+            html: 'app/index.html',
         },
 
         usemin: {
@@ -43,6 +43,6 @@ module.exports = function (grunt)
     grunt.loadNpmTasks('grunt-usemin');
 
     grunt.registerTask('default', [
-        'copy', 'useminPrepare', 'concat', 'uglify', 'cssmin', 'usemin'
+        'copy', 'useminPrepare', 'concat', 'uglify', 'cssmin', 'usemin', 'uglify'
     ]);
 };
