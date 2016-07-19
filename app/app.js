@@ -15,7 +15,7 @@ app.directive("pluginList", ['$http',function($http){
             self.sortKey = "name";
             self.order ='+';
 
-            $http.get('/api/plugins')
+            $http.get('/api/plugins.json')
                 .success(function(data){
                     self.plugins = data;
                 })
