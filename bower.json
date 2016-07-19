@@ -2,7 +2,6 @@
   "name": "jbrowse-plugin-repo",
   "dependencies": {
     "angular": "^1.5.7",
-    "bootstrap": "^3.3.6",
-    "angularUtils-pagination": "angular-utils-pagination#^0.11.1"
+    "bootstrap": "^3.3.6"
   }
 }
