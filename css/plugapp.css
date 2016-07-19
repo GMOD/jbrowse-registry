@@ -1,8 +1,5 @@
 header{
-    background-positon: center;
-    background-attachment:scroll;
-    background-size:cover;
-    background-image:url("/img/bloop.png");
+    background: gray;
     text-align:center;
     color: 'green';
     margin-bottom: 1em;

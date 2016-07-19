@@ -1,5 +1,4 @@
 <nav class="navbar navbar-default">
-   
     <div class="container-fluid">
         <div class="input-group">
             <input type="text" class="form-control" placeholder="Filter plugins..." ng-model="plug.filter.term" aria-describedby="plug-addon">
@@ -11,10 +10,10 @@
                     <label>Project:</label>
                     <select name="projectSelect" required="required" class="form-control" ng-model="plug.filter.gmod">
                         <option value="">All</option>
-			<option value="Apollo">Apollo</option>
+                        <option value="Apollo">Apollo</option>
                         <option value="GBrowse">GBrowse</option>
                         <option value="JBrowse">JBrowse</option>
-			<option value="Tripal">Tripal</option>
+                        <option value="Tripal">Tripal</option>
                     </select>
                 </div>
                 <div class="form-group">
@@ -34,14 +33,12 @@
                     </select>
                 </div>
                 <div class="form-group">
-		    <label> Plugins per page:</label>
+                    <label>Plugins per page:</label>
                     <input type="text" class="form-control per-page-control" placeholder="5" ng-model="plug.filter.perPage" >
                 </div>
             </form>
         </div>
         </div>
-		 
-   
     </div><!-- /.container-fluid -->
 </nav>
 
@@ -57,7 +54,7 @@
                 <ul class="list-unstyled">
                 <li>Author: {{plugin.author}}</li>
                 <li>Location: <a href={{plugin.location}}>{{plugin.location}}</a> </li>
-    	    <li>Date added: {{plugin.added | date:'yyyy-MM-dd'}} </li>
+                <li>Date added: {{plugin.added | date:'yyyy-MM-dd'}} </li>
                 </ul>
             </div>
         </div>
