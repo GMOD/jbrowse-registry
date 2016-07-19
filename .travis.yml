@@ -11,8 +11,8 @@ before_install:
     -in .deploy.key.enc -out deploy.key -d
 
 script:
-  - npm build_api
-  - npm build
+  - npm run build_api
+  - npm run build
 
 after_success:
   - chmod 600 deploy.key
