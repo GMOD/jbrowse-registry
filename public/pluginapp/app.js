@@ -9,15 +9,15 @@ app.controller("PluginController",function(){
 app.directive("pluginList", ['$http',function($http){
     return {
         restrict:"E",
-	templateUrl:"/pluginapp/plugin-list.html",
+	templateUrl:"/public/pluginapp/plugin-list.html",
         controller: function($http){
             var self = this;
 	    self.filter ={gmod:"", term:"", perPage:5};
             self.sortKey = "name";
 	    self.order ='+';
-	  
 
-	
+
+
 
             $http.get('/api/plugins')
                 .success(function(data){
@@ -37,10 +37,10 @@ app.directive("pluginList", ['$http',function($http){
 app.directive("pendingList", ['$http',function($http){
     return {
         restrict:"E",
-	templateUrl:"/pluginapp/pending-list.html",
+	templateUrl:"/public/pluginapp/pending-list.html",
         controller: function($http){
             var self = this;
-	    
+
 	    self.filter ={gmod:"", term:"", perPage:5};
             self.sortKey = "name";
 	    self.order = '+';
@@ -65,7 +65,7 @@ app.directive("pendingList", ['$http',function($http){
 app.directive("pluginTabs", ['$http',function($http){
     return {
         restrict:"E",
-	templateUrl:"/pluginapp/plugin-tabs.html",
+	templateUrl:"/public/pluginapp/plugin-tabs.html",
         controller: function($http){
             var self = this;
 
@@ -74,7 +74,7 @@ app.directive("pluginTabs", ['$http',function($http){
 	    self.isSet = function(setTab){
               return self.tab === setTab;
 	    };
-	    
+
             self.setTab = function(newTab){
               self.tab = newTab;
 	    };
@@ -87,17 +87,17 @@ app.directive("pluginTabs", ['$http',function($http){
 app.directive("pluginSubmit", ['$http',function($http){
     return {
         restrict:"E",
-	templateUrl:"/pluginapp/plugin-submit.html",
+	templateUrl:"/public/pluginapp/plugin-submit.html",
         controller: function($http){
             var self = this;
 	    self.formData={};
 	    self.status=0;
-	    
-	    
+
+
 	    self.testStatus = function(setStatus){
                 return self.status === setStatus;
 	    };
-	    
+
 	    self.setStatus = function(newStatus){
                 self.status = newStatus;
 	    };
@@ -116,7 +116,7 @@ app.directive("pluginSubmit", ['$http',function($http){
 	            console.log('Error: '+  data);
 	        });
 	    };
-	    
+
 	},
 
         controllerAs:"pform"
