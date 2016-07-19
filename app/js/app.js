@@ -11,7 +11,7 @@ app.directive("pluginList", ['$http',function($http){
         templateUrl:"partials/plugin-list.html",
         controller: function($http){
             var self = this;
-            self.filter = {gmod:"", term:"", perPage:10};
+            self.filter = {gmod:"", term:"", perPage:5};
             self.sortKey = "name";
             self.order ='+';
 
