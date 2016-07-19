@@ -1,0 +1,139 @@
+- author: Colin Diesh
+  description: |
+    A JBrowse plugin for plotting multiple bigwig files on a single track.
+    Includes a storeclass that accepts multiple bigwig URLs and a custom
+    tracktype for rendering the subtracks.
+  gmodProject: JBrowse
+  location: https://github.com/cmdcolin/multibigwig
+  name: multibigwig
+- author: Colin Diesh
+  description: |
+    A JBrowse plugin for plotting GC Content and GC Skew. The plugin consists
+    of a storeClass that automatically calculates the percentage of G/C bases
+    in a region, a track type that derives from the Wiggle XY or density types,
+    and a dialog box to adjust the sliding window size, window step size, and
+    the calculation mode (content or skew).
+  gmodProject: JBrowse
+  location: https://github.com/cmdcolin/gccontent
+  name: gccontent
+- author: Colin Diesh
+  description: |
+   A JBrowse plugin for indexing names with elasticsearch.
+  gmodProject: JBrowse
+  location: https://github.com/cmdcolin/jbrowse_elasticsearch
+  name: jbrowse_elasticsearch
+- author: Colin Diesh
+  description: |
+   A JBrowse plugin to load BED tabix, VCF tabis, or BAM as a blank track if
+   the index url gets a 404.
+  gmodProject: JBrowse
+  location: https://github.com/cmdcolin/fastloader
+  name: fastloader
+- author: Colin Diesh
+  description: |
+    A JBrowse plugin that adds a few custom glyphs for variants and GWAS data.
+  gmodProject: JBrowse
+  location: https://github.com/cmdcolin/gwasviewer
+  name: gwasviewer
+- author: Colin Diesh
+  description: |
+    A JBrowse plugin that fetches info from MyVariant.info and MyGene.info and
+    displays them.
+  gmodProject: JBrowse
+  location: https://github.com/cmdcolin/myvariantviewer
+  name: myvariantviewer
+- author: Colin Diesh
+  description: |
+    A JBrowse plugin for viewing data from the GA4GH APIs.
+  gmodProject: JBrowse
+  location: https://github.com/cmdcolin/ga4ghviewer
+  name: ga4ghviewer
+- author: Colin Diesh
+  description: |
+    A JBrowse plugin for re-mapping coordinates "on the fly".
+  gmodProject: JBrowse
+  location: https://github.com/cmdcolin/projectionplugin
+  name: projectionplugin
+- author: Andrew Wilkey
+  description: |
+   A JBrowse plugin to allow the browser to enter fullscreen mode.
+  gmodProject: JBrowse
+  location: https://github.com/awilkey/fullscreen-jbrowse
+  name: Fullscreen
+- author: Sean Davey sdavey@email.arizona.edu
+  description: |
+   custom track selector for managing CoGe experiments (tracks) and notebooks,
+   RESTful tracks, custom feature, SNP, alignment and marker tracks, feature
+   search, track data search, track export, search export, create new
+   experiments based on searches, and more.
+  gmodProject: JBrowse
+  location: https://github.com/LyonsLab/coge/tree/master/web/js/jbrowse/plugins/CoGe
+  name: CoGe JBrowse plugin
+- author: Travis Saari
+  description: |
+    Interactive tool for viewing and manipulating feature sequences -
+    hide/show, change text case, and highlight/unhighlight selected
+    subfeatures
+  gmodProject: JBrowse
+  license: GNU GPL v3.0
+  location: https://github.com/tsaari88/FeatureSequence
+  name: FeatureSequence
+- author: Nathan Dunn
+  description: |
+    Genome annotation editor with a Java Server backend and a Javascript client
+    that runs in a web browser as a JBrowse plugin.
+  gmodProject: JBrowse
+  location: https://github.com/GMOD/Apollo
+  name: Apollo
+- author: Colin Diesh
+  description: |
+    A JBrowse plugin for creating sashimi or junction style plots from RNA-seq
+    data
+  gmodProject: JBrowse
+  location: https://github.com/cmdcolin/sashimiplot
+  name: sashimiplot
+- author: Brigitte Hofmeister
+  description: |
+    Adds a 'select all from category' checkbox to all categories in
+    hierarchical tracklist  When you check/uncheck the box, it applies to all
+    tracks in that category and any subcategories
+  gmodProject: JBrowse
+  location: https://github.com/bhofmei/jbplugin-hierarchicalcheckbox
+  name: Hierarchical Checkbox Plugin
+- author: Brigitte Hofmeister
+  description: |
+    This plugin is to be used to add a menu option for XYPlot and MethylXYPlot
+    tracks that allows the user to change the y-axis limits without needing to
+    edit the config file.
+  gmodProject: JBrowse
+  location: https://github.com/bhofmei/jbplugin-trackscores
+  name: Track Score Plugin
+- author: Brigitte Hofmeister
+  description: |
+    This plugin is to be used with whole-genome bisulfite sequencing data.
+    Unlike almost all other browsers, this pluging allows you to see all
+    methylation contexts on one track.
+  gmodProject: JBrowse
+  location: https://github.com/bhofmei/jbplugin-methylation
+  name: Methylation Plugin
+- author: Brigitte Hofmeister
+  description: |
+    JBrowse plugin to support RNA visualization.
+  gmodProject: JBrowse
+  location: https://github.com/bhofmei/jbplugin-smallrna
+  name: Small RNA Plugin
+- author: Andrew Wilkey
+  description: |
+    Moves scrollbar on genome viewer up DOM to make it play well with others
+    when using JBrowse outside of an iframe.
+  gmodProject: JBrowse
+  location: https://github.com/awilkey/scrollpos-jbrowse
+  name: Scrollpos
+- author: Maria Kim
+  description: |
+    SeqLighter is a dynamic sequence viewer plugin implemented using the BioJS
+    framework.
+  gmodProject: JBrowse
+  license: MIT
+  location: https://github.com/Arabidopsis-Information-Portal/SeqLighter
+  name: SeqLighter
