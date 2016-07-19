@@ -8,10 +8,9 @@ Second revision of JBrowse plugin directory
 
 We would love for you to register your plugin! It's really easy to do:
 
-1. Fork this repository.
-2. Edit the [`plugins.yaml`](./plugins.yaml) file, and add your plugin to the
-   end of the list
-3. Submit a pull request to this repo.
+1. Edit the [`plugins.yaml`](https://github.com/erasche/pluginapp/edit/master/plugins.yaml)
+   file, and add your plugin to the end of the list
+2. Submit the pull request to this repo
 
 ## Building
 
