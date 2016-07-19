@@ -1,0 +1,20 @@
+language: node_js
+
+node_js:
+  - '6'
+
+before_script:
+  - npm install .
+
+before_install:
+  - openssl aes-256-cbc -K $encrypted_5a306830355a_key -iv $encrypted_5a306830355a_iv
+    -in deploy.key.enc -out deploy.key -d
+
+script:
+  - npm build_api
+  - npm build
+
+after_success:
+  - chmod 600 deploy.key
+  - mv deploy.key ~/.ssh/id_rsa
+  - npm run deploy

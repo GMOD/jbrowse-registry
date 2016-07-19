@@ -1,5 +1,7 @@
 # The GMOD Plugin Directory
 
+[![Build Status](https://travis-ci.org/erasche/pluginapp.svg?branch=master)](https://travis-ci.org/erasche/pluginapp)
+
 Second revision of JBrowse plugin directory
 
 ## Registering a Plugin
