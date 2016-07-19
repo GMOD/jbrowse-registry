@@ -6,7 +6,8 @@
   "scripts": {
     "postinstall": "bower install",
     "build_api": "python scripts/prepare_api.py < plugins.yaml > app/api/plugins.json",
-    "build": "grunt"
+    "build": "grunt",
+    "deploy": "grunt gh-pages"
   },
   "repository": {
     "type": "git",
@@ -30,6 +31,7 @@
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-cssmin": "^1.0.1",
     "grunt-contrib-uglify": "^1.0.1",
+    "grunt-gh-pages": "^1.1.0",
     "grunt-rev": "^0.1.0",
     "grunt-usemin": "^3.1.1"
   }

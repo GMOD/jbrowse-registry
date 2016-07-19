@@ -32,6 +32,14 @@ module.exports = function (grunt)
             }
         },
 
+        'gh-pages': {
+            options: {
+                base: 'dist'
+            },
+            src: ['**']
+        },
+
+
     });
 
     grunt.loadNpmTasks ('grunt-contrib-clean');
@@ -41,6 +49,7 @@ module.exports = function (grunt)
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-usemin');
+    grunt.loadNpmTasks('grunt-gh-pages');
 
     grunt.registerTask('default', [
         'copy', 'useminPrepare', 'concat', 'uglify', 'cssmin', 'usemin', 'uglify'
