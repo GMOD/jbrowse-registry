@@ -27,3 +27,14 @@ header .intro-heading{
 .input-group{
     margin: 1em;
 }
+
+.filter-group{
+    margin-bottom:1em;
+}
+.per-page{
+    float:right;
+}
+
+.per-page-control{
+     max-width:4em;
+}
