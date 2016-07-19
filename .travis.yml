@@ -12,6 +12,8 @@ script:
   - npm run build
 
 after_success:
+  - git config user.name "Travis CI"
+  - git config user.email "$COMMIT_AUTHOR_EMAIL"
   - chmod 600 deploy.key
   - mv deploy.key ~/.ssh/id_rsa
   - npm run deploy
