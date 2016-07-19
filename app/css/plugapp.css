@@ -4,6 +4,10 @@ header{
     color: 'green';
     margin-bottom: 1em;
 }
+.contact{
+    text-align:center;
+    margin-top:3em;
+}
 header .intro-text{
     margin-top:3.5em;
     margin-bottom:3.5em;
@@ -19,13 +23,23 @@ header .intro-heading{
 
 
 #app{
-   max-width:50em;
+   max-width: 60em;
    margin:0 auto;
 }
 
 
 .input-group{
     margin: 1em;
+}
+
+ul.nav li {
+    width: 33%;
+    text-align: center;
+    margin-bottom:1em;
+}
+
+.page-div{
+   text-align:center;
 }
 
 .filter-group{
