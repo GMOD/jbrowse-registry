@@ -8,7 +8,7 @@ before_script:
 
 before_install:
   - openssl aes-256-cbc -K $encrypted_5a306830355a_key -iv $encrypted_5a306830355a_iv
-    -in deploy.key.enc -out deploy.key -d
+    -in .deploy.key.enc -out deploy.key -d
 
 script:
   - npm build_api
