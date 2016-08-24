@@ -20,6 +20,33 @@ npm run build_api
 npm run build
 ```
 
+## Setup remote URL of your project (do this once before deploy step)
+
+```
+nano Gruntfile.js
+```
+Edit the *repo*, *origin* and *remoteUrl* to reflect your project. 
+
+```
+        'gh-pages': {
+            options: {
+                base: 'dist',
+                repo: 'git@github.com:myusername/myproject.git',
+                origin: 'git@github.com:myusername/myproject.git',
+                remoteUrl: 'git@github.com:myusername/myproject.git'
+            },
+            src: ['**']
+        },
+```
+
+Commit changes.
+
+```
+git commit -a -m "set remote url"
+git push
+```
+
+
 ## Deploying
 
 ```
@@ -32,3 +59,10 @@ Directories:
 
 app - The frontend code, including the HTML page, angular JS code, and the templates.
 app/api - the data that's used by the app
+
+## Troubleshooting
+
+ - make sure your GIT version is up to date.
+ - if you have problems deploying, try an alternate remote URL format in the (Setup remote URL step) for *repo*, *origin* and *remoteURL* values: http://myusername@github.com/myusername/myproject.git
+
+
