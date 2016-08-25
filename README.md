@@ -1,6 +1,6 @@
 # The GMOD Plugin Directory
 
-[![Build Status](https://travis-ci.org/erasche/pluginapp.svg?branch=master)](https://travis-ci.org/erasche/pluginapp)
+[![Build Status](https://travis-ci.org/GMOD/jbrowse-registry.svg?branch=master)](https://travis-ci.org/GMOD/jbrowse-registry)
 
 Second revision of JBrowse plugin directory
 
@@ -8,7 +8,7 @@ Second revision of JBrowse plugin directory
 
 We would love for you to register your plugin! It's really easy to do:
 
-1. Edit the [`plugins.yaml`](https://github.com/erasche/pluginapp/edit/master/plugins.yaml)
+1. Edit the [`plugins.yaml`](https://github.com/GMOD/jbrowse-registry/edit/master/plugins.yaml)
    file, and add your plugin to the end of the list
 2. Submit the pull request to this repo
 
