@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en" ng-app='plugD'>
+    <head>
+        <title>Unofficial GMOD Plugin List</title>
+
+        <link rel="stylesheet" href="css/morse.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:500' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
+        <script src="js/app.min.js"></script>
+
+    </head>
+        <body ng-controller="PluginController as pc">
+            <header>
+                <div class="container">
+                    <div class="intro-text">
+                       <div class="intro-heading">The GMOD Plugin Directory</div>
+                    </div>
+                </div>
+            </header>
+            <div class="container">
+                <section id="app">
+                    <ul class="nav nav-pills">
+                        <li class="active">
+                            <a>Plugins</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/GMOD/jbrowse-registry#registering-a-plugin" target="_blank">Register a Plugin</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/GMOD/jbrowse-registry/pulls" target="_blank">Pending plugins</a>
+                        </li>
+                    </ul>
+                    <plugin-list></plugin-list>
+                </section>
+            </div>
+
+            <div class="contact">
+                <p>
+                    This project is licensed under the BSD-2-Clause license,
+                    and is avilable on <a href="https://github.com/GMOD/jbrowse-registry">GitHub</a>
+                </p>
+            </div>
+    </body>
+</html>

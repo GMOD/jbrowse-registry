@@ -1,0 +1,54 @@
+header{
+    background: gray;
+    text-align:center;
+    color: 'green';
+    margin-bottom: 1em;
+}
+.contact{
+    text-align:center;
+    margin-top:3em;
+}
+header .intro-text{
+    margin-top:3.5em;
+    margin-bottom:3.5em;
+    color:#fff;
+}
+
+header .intro-heading{
+  font-family:"Roboto",sans-serif;
+  font-weight:500;
+  font-size: 6em;
+}
+
+
+
+#app{
+   max-width: 60em;
+   margin:0 auto;
+}
+
+
+.input-group{
+    margin: 1em;
+}
+
+ul.nav li {
+    width: 33%;
+    text-align: center;
+    margin-bottom:1em;
+}
+
+.page-div{
+   text-align:center;
+}
+
+.filter-group{
+    margin-bottom:1em;
+}
+.per-page{
+    float:right;
+}
+
+.per-page-control{
+     max-width:4em;
+}
