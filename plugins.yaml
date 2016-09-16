@@ -137,3 +137,11 @@
   license: MIT
   location: https://github.com/Arabidopsis-Information-Portal/SeqLighter
   name: SeqLighter
+- author: Keiran Raine
+  description: |
+    JBrowse plugin to display multiple BigWig tracks as a stacked proportion of count with
+    a wiggleXY plot overlaid to show the count at that location e.g. allele fraction.
+  gmodProject: JBrowse
+  license: AGPL 3.0
+  location: https://github.com/cancerit/proportionalmultibw
+  name: ProportionalMultiBw
