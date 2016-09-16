@@ -12,7 +12,10 @@ We would love for you to register your plugin! It's really easy to do:
    file, and add your plugin to the end of the list
 2. Submit the pull request to this repo
 
-## Building
+You're done.  Once the administrator accepts the PR, the plugin will be "published."
+
+
+## Building the web app (not required for registering the plugin)
 
 ```
 npm install .
@@ -38,14 +41,6 @@ Edit the *repo*, *origin* and *remoteUrl* to reflect your project.
             src: ['**']
         },
 ```
-
-Commit changes.
-
-```
-git commit -a -m "set remote url"
-git push
-```
-
 
 ## Deploying
 
