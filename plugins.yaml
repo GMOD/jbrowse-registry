@@ -154,3 +154,10 @@
   license: AGPL 3.0
   location: https://github.com/cancerit/proportionalmultibw
   name: ProportionalMultiBw
+- author: E Rasche
+  description: |
+      TEST. DO NOT MERGE.
+  gmodProject: JBrowse
+  license: AGPL 3.0
+  location: https://github.com/erasche/testing
+  name: TEST DO NOT MERGE
