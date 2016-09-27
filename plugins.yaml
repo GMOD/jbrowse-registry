@@ -145,7 +145,7 @@
   gmodProject: JBrowse
   license: MIT
   location: https://github.com/Arabidopsis-Information-Portal/ComboTrackSelector
-  name: SeqLighter
+  name: ComboTrackSelector
 - author: Keiran Raine
   description: |
     JBrowse plugin to display multiple BigWig tracks as a stacked proportion of count with
