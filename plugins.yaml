@@ -129,13 +129,22 @@
   gmodProject: JBrowse
   location: https://github.com/awilkey/scrollpos-jbrowse
   name: Scrollpos
-- author: Maria Kim
+- author: Maria Kim, Vivek Krishnakumar
   description: |
     SeqLighter is a dynamic sequence viewer plugin implemented using the BioJS
-    framework.
+    framework, built for/by the Arabidopsis Information Portal (Araport) project.
   gmodProject: JBrowse
   license: MIT
   location: https://github.com/Arabidopsis-Information-Portal/SeqLighter
+  name: SeqLighter
+- author: Maria Kim, Vivek Krishnakumar
+  description: |
+    ComboTrackSelector is a plugin to allow the co-existence of the
+    Hierarchical and Faceted Track selectors in JBrowse, built for/by
+    the Arabidopsis Information Portal (Araport) project.
+  gmodProject: JBrowse
+  license: MIT
+  location: https://github.com/Arabidopsis-Information-Portal/ComboTrackSelector
   name: SeqLighter
 - author: Keiran Raine
   description: |
