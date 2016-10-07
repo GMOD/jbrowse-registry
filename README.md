@@ -1,8 +1,8 @@
 # The GMOD Plugin Directory
 
-[![Build Status](https://travis-ci.org/GMOD/jbrowse-registry.svg?branch=master)](https://travis-ci.org/GMOD/jbrowse-registry)
+https://gmod.github.io/jbrowse-registry/
 
-Second revision of JBrowse plugin directory
+[![Build Status](https://travis-ci.org/GMOD/jbrowse-registry.svg?branch=master)](https://travis-ci.org/GMOD/jbrowse-registry)
 
 ## Registering a Plugin
 
