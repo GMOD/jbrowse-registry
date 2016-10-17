@@ -154,3 +154,21 @@
   license: AGPL 3.0
   location: https://github.com/cancerit/proportionalmultibw
   name: ProportionalMultiBw
+- author: Colin Diesh
+  description: |
+    A JBrowse plugin for coloring BAM reads according to quality scores
+  gmodProject: JBrowse
+  location: https://github.com/cmdcolin/qualityglyphs
+  name: qualityglyphs
+- author: Colin Diesh
+  description: |
+    A JBrowse plugin with a custom variant track for multi-VCF files and optionally plotting LD scores
+  gmodProject: JBrowse
+  location: https://github.com/cmdcolin/multivariantviewer
+  name: multivariantviewer
+- author: Colin Diesh
+  description: |
+    A JBrowse plugin to parse AGP files and display them
+  gmodProject: JBrowse
+  location: https://github.com/cmdcolin/agp_parser
+  name: agp_parser
