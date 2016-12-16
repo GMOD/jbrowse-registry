@@ -172,3 +172,10 @@
   gmodProject: JBrowse
   location: https://github.com/cmdcolin/agp_parser
   name: agp_parser
+- author: Colin Diesh
+  description: |
+    A JBrowse plugin to view multiple alignment format (MAF) files
+  gmodProject: JBrowse
+  license: ISC
+  location: https://github.com/cmdcolin/mafviewer
+  name: mafviewer
