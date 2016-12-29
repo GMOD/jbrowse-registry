@@ -1,4 +1,5 @@
 #!/bin/bash
+set -ex
 git config --global user.name "Travis CI"
 git config --global user.email "$COMMIT_AUTHOR_EMAIL"
 chmod 600 deploy.key
