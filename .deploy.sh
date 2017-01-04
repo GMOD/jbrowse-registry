@@ -1,7 +1,7 @@
 #!/bin/bash
 set -ex
 git config --global user.name "Travis CI"
-git config --global user.email "$COMMIT_AUTHOR_EMAIL"
+git config --global user.email "<>"
 chmod 600 deploy.key
 mv deploy.key ~/.ssh/id_rsa
 npm run deploy
