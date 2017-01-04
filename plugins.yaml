@@ -174,8 +174,9 @@
   name: agp_parser
 - author: Colin Diesh
   description: |
-    A JBrowse plugin to view multiple alignment format (MAF) files
+    A JBrowse plugin to view GC content % overlaid on a BAM coverage plot
   gmodProject: JBrowse
   license: ISC
-  location: https://github.com/cmdcolin/mafviewer
-  name: mafviewer
+  location: https://github.com/cmdcolin/gccoverage
+  name: gccoverage
+
