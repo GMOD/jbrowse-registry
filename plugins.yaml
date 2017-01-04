@@ -24,7 +24,7 @@
   name: jbrowse_elasticsearch
 - author: Colin Diesh
   description: |
-   A JBrowse plugin to load BED tabix, VCF tabis, or BAM as a blank track if
+   A JBrowse plugin to load BED tabix, VCF tabix, or BAM as a blank track if
    the index url gets a 404.
   gmodProject: JBrowse
   location: https://github.com/cmdcolin/fastloader
