@@ -18,12 +18,12 @@
   "author": "awilkey",
   "license": "BSD-2-Clause",
   "dependencies": {
-    "body-parser": "^1.15.1",
-    "bower": "^1.7.9",
-    "ejs": "^2.4.2",
+    "body-parser": "^1.15.2",
+    "bower": "^1.8.0",
+    "ejs": "^2.5.5",
     "express": "^4.14.0",
     "gulp": "^3.9.1",
-    "mongoose": "^4.5.0"
+    "mongoose": "^4.7.6"
   },
   "devDependencies": {
     "grunt": "^1.0.1",
@@ -31,12 +31,12 @@
     "grunt-contrib-clean": "^1.0.0",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-cssmin": "^1.0.1",
-    "grunt-contrib-uglify": "^1.0.1",
-    "grunt-gh-pages": "^1.1.0",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-gh-pages": "^2.0.0",
     "grunt-rev": "^0.1.0",
     "grunt-usemin": "^3.1.1",
     "http-server": "^0.9.0",
-    "js-yaml": "^3.6.1"
+    "js-yaml": "^3.7.0"
   }
 }
