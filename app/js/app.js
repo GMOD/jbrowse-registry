@@ -17,7 +17,7 @@ app.directive("pluginList", ['$http',function($http){
 
             $http.get('api/plugins.json')
                 .then(function(data){
-                    self.plugins = data:data;
+                    self.plugins = data.data;
                 }, function(data){
                     // todo: error
                 });
