@@ -16,10 +16,9 @@ app.directive("pluginList", ['$http',function($http){
             self.order ='+';
 
             $http.get('api/plugins.json')
-                .success(function(data){
+                .then(function(data){
                     self.plugins = data;
-                })
-                .error(function(data){
+                }, function(data){
                     // todo: error
                 });
         },
