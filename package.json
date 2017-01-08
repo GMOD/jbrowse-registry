@@ -1,42 +1,27 @@
 {
   "name": "jbrowse-plugin-repo",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Plugin directory for jbrowse",
-  "main": "index.js",
-  "scripts": {
-    "postinstall": "bower install",
-    "build_api": "node scripts/prepare_api.js > app/api/plugins.json",
-    "build": "grunt",
-    "serve": "npm run build_api && npm run build && http-server dist",
-    "deploy": "grunt gh-pages",
-    "test": "exit 0"
-  },
   "repository": {
     "type": "git",
-    "url": " "
+    "url": "https://github.com/gmod/jbrowse-registry"
   },
-  "author": "awilkey",
+  "author": "Andrew Wilkey",
   "license": "BSD-2-Clause",
-  "dependencies": {
-    "body-parser": "^1.15.2",
-    "bower": "^1.8.0",
-    "ejs": "^2.5.5",
-    "express": "^4.14.0",
-    "gulp": "^3.9.1",
-    "mongoose": "^4.7.6"
-  },
   "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-cli": "^1.2.0",
-    "grunt-contrib-clean": "^1.0.0",
-    "grunt-contrib-concat": "^1.0.1",
-    "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-cssmin": "^1.0.2",
-    "grunt-contrib-uglify": "^2.0.0",
-    "grunt-gh-pages": "^2.0.0",
-    "grunt-rev": "^0.1.0",
-    "grunt-usemin": "^3.1.1",
+    "angular": "^1.6.1",
+    "angular-utils-pagination": "^0.11.1",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "html-loader": "^0.4.4",
     "http-server": "^0.9.0",
-    "js-yaml": "^3.7.0"
+    "js-yaml": "^3.7.0",
+    "json-loader": "^0.5.4",
+    "node-sass": "^4.1.1",
+    "sass-loader": "^4.1.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
   }
 }

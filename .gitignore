@@ -1,12 +1,5 @@
 
-# Created by https://www.gitignore.io/api/bower,node
-
-### Bower ###
-bower_components
-.bower-cache
-.bower-registry
-.bower-tmp
-
+# Created by https://www.gitignore.io/api/node
 
 ### Node ###
 # Logs
@@ -45,6 +38,20 @@ jspm_packages
 # Optional npm cache directory
 .npm
 
+# Optional eslint cache
+.eslintcache
+
 # Optional REPL history
 .node_repl_history
-dist/
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+
+# End of https://www.gitignore.io/api/node
+js/plugins.json
+build/
+release
