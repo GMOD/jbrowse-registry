@@ -25,7 +25,7 @@ deploy:
 	@rm -rf release
 	@mkdir release
 	# Load required data
-	@cp -Rv index.html build partials img   release
+	@cp -Rv index.html build partials img demos   release
 	# Build
 	@$(MAKE) build
 	# Push
