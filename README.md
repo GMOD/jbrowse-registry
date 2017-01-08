@@ -24,12 +24,6 @@ This step is for developers, and is not required for registering a plugin with t
 make
 ```
 
-## Deploying
-
-```
-make deploy
-```
-
 ## Changelog
 
 - 0.3.0
