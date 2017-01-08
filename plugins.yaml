@@ -92,6 +92,7 @@
   gmodProject: JBrowse
   location: https://github.com/cmdcolin/sashimiplot
   name: sashimiplot
+  image: sashimiplot.png
 - author: Brigitte Hofmeister
   description: |
     Adds a 'select all from category' checkbox to all categories in

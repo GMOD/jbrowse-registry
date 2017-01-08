@@ -1,6 +1,7 @@
 var angular = require('angular');
 require('angular-utils-pagination');
 var plugin_data = require('json!./plugins.json');
+var app_data = require('json!../package.json');
 
 var app = angular.module('plugD', [
     'angularUtils.directives.dirPagination'
@@ -17,8 +18,22 @@ app.directive("pluginList", function(){
             this.filter = {gmod:"", term:"", perPage:5};
             this.sortKey = "name";
             this.order ='+';
-            this.plugins = plugin_data;
+            this.plugins = plugin_data.map(function(elem){
+                elem.id = elem.name.replace(/ /g, '-').replace(/[^A-Za-z0-9_-]/g, '')
+                return elem;
+            });
         },
         controllerAs:"plug"
+    }
+});
+
+app.directive("versionInfo", function(){
+    return {
+        restrict:"E",
+        template: '<a style="color:white" href="{{ url }}">Version {{ version }}</a>',
+        link: function(scope, el){
+            scope.version = app_data.version;
+            scope.url = app_data.repository.url;
+        }
     }
 });
