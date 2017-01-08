@@ -18,9 +18,7 @@ You're done.  Once the administrator accepts the PR, the plugin will be "publish
 ## Building the web app (not required for registering the plugin)
 
 ```
-npm install .
-npm run build_api
-npm run build
+make
 ```
 
 ## Setup remote URL of your project (do this once before deploy step)
@@ -45,19 +43,13 @@ Edit the *repo*, *origin* and *remoteUrl* to reflect your project.
 ## Deploying
 
 ```
+make deploy
 npm run deploy
 ```
-
-## App Structure
-
-Directories:
-
-app - The frontend code, including the HTML page, angular JS code, and the templates.
-app/api - the data that's used by the app
 
 ## Troubleshooting
 
  - make sure your GIT version is up to date.
- - if you have problems deploying, try an alternate remote URL format in the (Setup remote URL step) for *repo*, *origin* and *remoteURL* values: http://myusername@github.com/myusername/myproject.git
-
-
+ - if you have problems deploying, try an alternate remote URL format in the
+   (Setup remote URL step) for *repo*, *origin* and *remoteURL* values:
+   http://myusername@github.com/myusername/myproject.git
