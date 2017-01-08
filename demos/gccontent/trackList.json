@@ -13,7 +13,7 @@
 			"type" : "SequenceTrack",
 			"seqType" : "dna",
 			"key" : "Reference sequence",
-			"urlTemplate" : "seq/{refseq}/",
+			"urlTemplate" : "../seq/{refseq}/",
 			"chunkSize" : 20000,
 			"storeClass" : "JBrowse/Store/Sequence/StaticChunked",
 			"category" : "Reference sequence"
@@ -22,7 +22,7 @@
 			"storeClass" : "JBrowse/Store/SeqFeature/SequenceChunks",
 			"type": "GCContent/View/Track/GCContentXY",
 			"label" : "GCContentXY",
-			"urlTemplate" : "seq/{refseq}/",
+			"urlTemplate" : "../seq/{refseq}/",
 			"bicolor_pivot": 0.5
 		}
 	]

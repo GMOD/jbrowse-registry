@@ -18,6 +18,7 @@
   location: https://github.com/cmdcolin/gccontent
   name: gccontent
   license: MIT
+  demo: "gccontent&tracks=DNA,GCContentXY"
 - author: Colin Diesh
   description: |
    A JBrowse plugin for indexing names with elasticsearch.
