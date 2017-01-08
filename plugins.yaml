@@ -6,6 +6,7 @@
   gmodProject: JBrowse
   location: https://github.com/cmdcolin/multibigwig
   name: multibigwig
+  license: MIT
 - author: Colin Diesh
   description: |
     A JBrowse plugin for plotting GC Content and GC Skew. The plugin consists
@@ -16,6 +17,7 @@
   gmodProject: JBrowse
   location: https://github.com/cmdcolin/gccontent
   name: gccontent
+  license: MIT
 - author: Colin Diesh
   description: |
    A JBrowse plugin for indexing names with elasticsearch.
@@ -29,6 +31,7 @@
   gmodProject: JBrowse
   location: https://github.com/cmdcolin/fastloader
   name: fastloader
+  license: ISC
 - author: Colin Diesh
   description: |
     A JBrowse plugin that adds a few custom glyphs for variants and GWAS data.
@@ -54,12 +57,14 @@
   gmodProject: JBrowse
   location: https://github.com/cmdcolin/projectionplugin
   name: projectionplugin
+  license: MIT
 - author: Andrew Wilkey
   description: |
    A JBrowse plugin to allow the browser to enter fullscreen mode.
   gmodProject: JBrowse
   location: https://github.com/awilkey/fullscreen-jbrowse
   name: Fullscreen
+  license: MIT
 - author: Sean Davey sdavey@email.arizona.edu
   description: |
    custom track selector for managing CoGe experiments (tracks) and notebooks,
@@ -69,13 +74,14 @@
   gmodProject: JBrowse
   location: https://github.com/LyonsLab/coge/tree/master/web/js/jbrowse/plugins/CoGe
   name: CoGe JBrowse plugin
+  license: BSD 2-Clause
 - author: Travis Saari
   description: |
     Interactive tool for viewing and manipulating feature sequences -
     hide/show, change text case, and highlight/unhighlight selected
     subfeatures
   gmodProject: JBrowse
-  license: GNU GPL v3.0
+  license: GPL-3.0
   location: https://github.com/tsaari88/FeatureSequence
   name: FeatureSequence
 - author: Nathan Dunn
@@ -85,6 +91,7 @@
   gmodProject: JBrowse
   location: https://github.com/GMOD/Apollo
   name: Apollo
+  license: BSD 3-Clause
 - author: Colin Diesh
   description: |
     A JBrowse plugin for creating sashimi or junction style plots from RNA-seq
@@ -93,6 +100,7 @@
   location: https://github.com/cmdcolin/sashimiplot
   name: sashimiplot
   image: sashimiplot.png
+  license: MIT
 - author: Brigitte Hofmeister
   description: |
     Adds a 'select all from category' checkbox to all categories in
@@ -101,6 +109,7 @@
   gmodProject: JBrowse
   location: https://github.com/bhofmei/jbplugin-hierarchicalcheckbox
   name: Hierarchical Checkbox Plugin
+  license: MIT
 - author: Brigitte Hofmeister
   description: |
     This plugin is to be used to add a menu option for XYPlot and MethylXYPlot
@@ -109,6 +118,7 @@
   gmodProject: JBrowse
   location: https://github.com/bhofmei/jbplugin-trackscores
   name: Track Score Plugin
+  license: MIT
 - author: Brigitte Hofmeister
   description: |
     This plugin is to be used with whole-genome bisulfite sequencing data.
@@ -117,12 +127,14 @@
   gmodProject: JBrowse
   location: https://github.com/bhofmei/jbplugin-methylation
   name: Methylation Plugin
+  license: Apache 2.0
 - author: Brigitte Hofmeister
   description: |
     JBrowse plugin to support RNA visualization.
   gmodProject: JBrowse
   location: https://github.com/bhofmei/jbplugin-smallrna
   name: Small RNA Plugin
+  license: MIT
 - author: Andrew Wilkey
   description: |
     Moves scrollbar on genome viewer up DOM to make it play well with others
@@ -130,6 +142,7 @@
   gmodProject: JBrowse
   location: https://github.com/awilkey/scrollpos-jbrowse
   name: Scrollpos
+  license: MIT
 - author: Maria Kim, Vivek Krishnakumar
   description: |
     SeqLighter is a dynamic sequence viewer plugin implemented using the BioJS
@@ -180,4 +193,3 @@
   license: ISC
   location: https://github.com/cmdcolin/gccoverage
   name: gccoverage
-
