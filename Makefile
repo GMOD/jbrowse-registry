@@ -1,4 +1,4 @@
-.PHONY: build help
+.PHONY: build help lint all run deploy
 
 NPM:=$(shell which npm)
 YARN:=$(shell which yarn)
@@ -38,6 +38,9 @@ node_modules: package.json
 
 js/plugins.json: node_modules
 	node scripts/prepare_api.js > $@
+
+lint:
+	node scripts/lint.js
 
 help:
 	@egrep '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
