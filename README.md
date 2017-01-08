@@ -1,4 +1,4 @@
-# The GMOD Plugin Directory [![Build Status](https://travis-ci.org/GMOD/jbrowse-registry.svg?branch=master)](https://travis-ci.org/GMOD/jbrowse-registry)![License](https://img.shields.io/github/license/gmod/jbrowse-registry.svg)
+# The GMOD Plugin Directory [![Build Status](https://travis-ci.org/GMOD/jbrowse-registry.svg?branch=master)](https://travis-ci.org/GMOD/jbrowse-registry)
 
 [https://gmod.github.io/jbrowse-registry/](https://gmod.github.io/jbrowse-registry/)
 
@@ -28,4 +28,8 @@ make deploy
 
 ## Changelog
 
-
+- 0.2.0
+	- Switched to webpack
+	- Removed grunt, bower dependencies
+- 0.1.0
+	- Initial Release
