@@ -18,7 +18,10 @@ app.directive("pluginList", function(){
             this.filter = {gmod:"", term:"", perPage:5};
             this.sortKey = "name";
             this.order ='+';
-            this.plugins = plugin_data;
+            this.plugins = plugin_data.map(function(elem){
+                elem.id = elem.name.replace(/ /g, '-').replace(/[^A-Za-z0-9_-]/g, '')
+                return elem;
+            });
         },
         controllerAs:"plug"
     }

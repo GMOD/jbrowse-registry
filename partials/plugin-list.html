@@ -45,17 +45,38 @@
 <div class="plugin-list">
     <div class="list-group-item" dir-paginate="plugin in plug.plugins |orderBy:[plug.order+plug.sortKey,'+name']|
         filter:plug.filter.gmod:strict:plugin.gmodProject | filter:plug.filter.term |itemsPerPage:plug.filter.perPage as results" pagination-id="plugins">
-         <div id={{"plugin-"+plugin.id}}>
-            <h3> {{plugin.name}} <em class="pull-right">{{plugin.gmodProject}}</em></h3>
+         <div id="plugin-{{plugin.id}}">
+             <div class="row plugin-title">
+                <div class="col-xs-9 plugin-name">
+                    <a href="{{plugin.location}}">
+                    {{ plugin.name }}
+                    </a>
+                </div>
+                <div class="col-xs-3 plugin-project">
+                    {{ plugin.gmodProject }}
+                </div>
+             </div>
             <div>
-                <h4>Description</h4>
-                <blockquote>{{plugin.description}}</blockquote>
-                <h4>Specs</h4>
-                <ul class="list-unstyled">
-                <li>Author: {{plugin.author}}</li>
-                <li>Location: <a href={{plugin.location}}>{{plugin.location}}</a> </li>
-                <li>Date added: {{plugin.added | date:'yyyy-MM-dd'}} </li>
-                </ul>
+                <div class="row" ng-if="!plugin.image">
+                    <div class="col-xs-12">
+                        <blockquote>{{plugin.description}}</blockquote>
+                        <ul class="list-unstyled">
+                            <li>Author: {{plugin.author}}</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row" ng-if="plugin.image">
+                    <div class="col-xs-9">
+                        <blockquote>{{plugin.description}}</blockquote>
+                        <ul class="list-unstyled">
+                            <li>Author: {{plugin.author}}</li>
+                            <li>Location: <a href={{plugin.location}}>{{plugin.location}}</a> </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="img/{{ plugin.image }}" style="width:100%">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
