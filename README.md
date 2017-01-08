@@ -28,6 +28,8 @@ make deploy
 
 ## Changelog
 
+- 0.2.1
+	- Version now visible in plugin directory
 - 0.2.0
 	- Switched to webpack
 	- Removed grunt, bower dependencies

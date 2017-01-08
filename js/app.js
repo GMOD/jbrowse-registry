@@ -1,6 +1,7 @@
 var angular = require('angular');
 require('angular-utils-pagination');
 var plugin_data = require('json!./plugins.json');
+var app_data = require('json!../package.json');
 
 var app = angular.module('plugD', [
     'angularUtils.directives.dirPagination'
@@ -20,5 +21,16 @@ app.directive("pluginList", function(){
             this.plugins = plugin_data;
         },
         controllerAs:"plug"
+    }
+});
+
+app.directive("versionInfo", function(){
+    return {
+        restrict:"E",
+        template: '<a style="color:white" href="{{ url }}">Version {{ version }}</a>',
+        link: function(scope, el){
+            scope.version = app_data.version;
+            scope.url = app_data.repository.url;
+        }
     }
 });
