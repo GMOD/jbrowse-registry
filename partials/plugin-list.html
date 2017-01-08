@@ -66,6 +66,13 @@
                             <span>&nbsp;</span>
                             <span ng-if="plugin.license" class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
                             <span ng-if="plugin.license" ng-bind-html="plugin.license | spdx_formatter"></span>
+                            <span>&nbsp;</span>
+                            <span ng-if="plugin.demo" class="glyphicon glyphicon-link" aria-hidden="true"></span>
+                            <span ng-if="plugin.demo">
+                                <a href="demos/JBrowse-1.12.1/?data=../{{ plugin.demo }}">
+                                    Live Demo
+                                </a>
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -78,6 +85,13 @@
                             <span>&nbsp;</span>
                             <span ng-if="plugin.license" class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
                             <span ng-if="plugin.license" ng-bind-html="plugin.license | spdx_formatter"></span>
+                            <span>&nbsp;</span>
+                            <span ng-if="plugin.demo" class="glyphicon glyphicon-link" aria-hidden="true"></span>
+                            <span ng-if="plugin.demo">
+                                <a href="demos/JBrowse-1.12.1/?data=../{{ plugin.demo }}">
+                                    Live Demo
+                                </a>
+                            </span>
                         </div>
                     </div>
                     <div class="col-xs-3">
