@@ -74,7 +74,7 @@
   gmodProject: JBrowse
   location: https://github.com/LyonsLab/coge/tree/master/web/js/jbrowse/plugins/CoGe
   name: CoGe JBrowse plugin
-  license: BSD 2-Clause
+  license: BSD-2-Clause
 - author: Travis Saari
   description: |
     Interactive tool for viewing and manipulating feature sequences -
@@ -91,7 +91,7 @@
   gmodProject: JBrowse
   location: https://github.com/GMOD/Apollo
   name: Apollo
-  license: BSD 3-Clause
+  license: BSD-3-Clause
 - author: Colin Diesh
   description: |
     A JBrowse plugin for creating sashimi or junction style plots from RNA-seq
@@ -127,7 +127,7 @@
   gmodProject: JBrowse
   location: https://github.com/bhofmei/jbplugin-methylation
   name: Methylation Plugin
-  license: Apache 2.0
+  license: Apache-2.0
 - author: Brigitte Hofmeister
   description: |
     JBrowse plugin to support RNA visualization.
@@ -165,7 +165,7 @@
     JBrowse plugin to display multiple BigWig tracks as a stacked proportion of count with
     a wiggleXY plot overlaid to show the count at that location e.g. allele fraction.
   gmodProject: JBrowse
-  license: AGPL 3.0
+  license: AGPL-3.0
   location: https://github.com/cancerit/proportionalmultibw
   name: ProportionalMultiBw
 - author: Colin Diesh
