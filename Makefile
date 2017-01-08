@@ -29,7 +29,7 @@ deploy:
 	# Build
 	@$(MAKE) build
 	# Push
-	./node_modules/.bin/gh-pages -d release/
+	./node_modules/.bin/gh-pages -d release/ --repo git@github.com:gmod/jbrowse-registry.git
 	# Cleanup
 	@rm -rf release
 
