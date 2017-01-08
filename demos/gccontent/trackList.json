@@ -1,0 +1,29 @@
+{
+	"formatVersion" : 1,
+	"plugins" : [
+		{
+			"location" : "https://rawgit.com/elsiklab/gccontent/5c8b0582ecebf9edf684c76af8075fb3d30ec3fa",
+			"name" : "GCContent"
+		}
+	],
+	"tracks" : [
+		{
+			"disablePreflight": true,
+			"label" : "DNA",
+			"type" : "SequenceTrack",
+			"seqType" : "dna",
+			"key" : "Reference sequence",
+			"urlTemplate" : "../seq/{refseq}/",
+			"chunkSize" : 20000,
+			"storeClass" : "JBrowse/Store/Sequence/StaticChunked",
+			"category" : "Reference sequence"
+		},
+		{
+			"storeClass" : "JBrowse/Store/SeqFeature/SequenceChunks",
+			"type": "GCContent/View/Track/GCContentXY",
+			"label" : "GCContentXY",
+			"urlTemplate" : "../seq/{refseq}/",
+			"bicolor_pivot": 0.5
+		}
+	]
+}
