@@ -2,6 +2,7 @@ var angular = require('angular');
 require('angular-utils-pagination');
 var plugin_data = require('json!./plugins.json');
 var app_data = require('json!../package.json');
+var spdxLicenses = require('spdx-licenses');
 
 var app = angular.module('plugD', [
     'angularUtils.directives.dirPagination'
@@ -37,3 +38,13 @@ app.directive("versionInfo", function(){
         }
     }
 });
+
+app.filter("spdx_formatter", ["$sce", function($sce){
+	return function(input) {
+		if (input) {
+			var license = spdxLicenses.spdx(input);
+			return $sce.trustAs('html', license.name.replace(/^"/, '').replace(/"$/, '').replace(/""/g, '"'));
+		}
+		return;
+	};
+}]);

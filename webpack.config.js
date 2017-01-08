@@ -12,6 +12,7 @@ module.exports = {
 			{test: /\.(png|gif|ttf|eot|svg|woff|woff2)(\?[a-z0-9]+)?$/, loader: "file-loader"},
 			{test: /\.(png|gif|ttf|eot|svg|woff|woff2)(\?[a-z0-9=.]+)?$/, loader: "file-loader"},
 			{test: /\.css$/, loader: "style!css"},
+			{test: /node_modules.*\.json$/, loader: "json-loader"},
 			{test: /\.html$/, loader: "html"},
 			{test: /\.scss$/, loader: ExtractTextPlugin.extract("css!sass")},
 		],
