@@ -131,7 +131,7 @@
   license: Apache-2.0
 - author: Brigitte Hofmeister
   description: |
-    JBrowse plugin to support RNA visualization.
+    JBrowse plugin to support small RNA visualization.
   gmodProject: JBrowse
   location: https://github.com/bhofmei/jbplugin-smallrna
   name: Small RNA Plugin
@@ -194,3 +194,10 @@
   license: ISC
   location: https://github.com/cmdcolin/gccoverage
   name: gccoverage
+- author: Brigitte Hofmeister
+  description: |
+    JBrowse plugin to makes configurable screenshots easy using PhantomJS Cloud
+  gmodProject: JBrowse
+  location: https://github.com/bhofmei/jbplugin-screenshot
+  name: Screenshots Plugin
+  license: MIT
