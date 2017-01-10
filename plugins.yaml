@@ -194,7 +194,7 @@
   license: ISC
   location: https://github.com/cmdcolin/gccoverage
   name: gccoverage
-  - author: Brigitte Hofmeister
+- author: Brigitte Hofmeister
   description: |
     JBrowse plugin to makes configurable screenshots easy using PhantomJS Cloud
   gmodProject: JBrowse
