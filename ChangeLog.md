@@ -1,5 +1,8 @@
 ## Changelog
 
+- 0.5.0
+       - Allow anchoring on page number
+       - Fix bug with demos related to underscores in filenames
 - 0.4.0
        - Live demos are now possible
 - 0.3.0
