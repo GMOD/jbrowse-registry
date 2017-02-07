@@ -10,6 +10,15 @@ var app = angular.module('plugD', [
 
 app.controller("PluginController",function($scope,$location){
     $scope.filter = {gmod:"", term:"", perPage:5};
+    $scope.currentPage = 1;
+    
+	// URI control querry string
+    var search = $location.search();	
+    var page = search.page || $scope.currentPage;
+    var per = search.perPage || $scope.filter.perPage;
+    $location.search({page:page, perPage:per});
+		
+
     $scope.sortKey = "name";
     $scope.order ='+';
     $scope.plugins = plugin_data.map(function(elem){
@@ -17,11 +26,20 @@ app.controller("PluginController",function($scope,$location){
         return elem;
     });
 
-    $scope.currentPage =  $location.hash() || 1;
+	// pagination function on page change
     $scope.pageChangeHandler = function(newPage){
         $scope.currentPage = newPage;
-        $location.hash(newPage);
+        $location.search({page:newPage,perPage:$scope.filter.perPage});
     }
+
+	// Watch querry string for changes and update
+    $scope.$watch(function(){
+        return $location.search();
+    }, function(value){
+       $scope.filter.perPage = value.perPage;
+	   $scope.currentPage = value.page;
+    })
+
 
 });
 
