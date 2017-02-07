@@ -9,20 +9,19 @@ var app = angular.module('plugD', [
 ]);
 
 app.controller("PluginController",function($scope,$location){
-            $scope.filter = {gmod:"", term:"", perPage:5};
-            $scope.sortKey = "name";
-            $scope.order ='+';
-            $scope.plugins = plugin_data.map(function(elem){
-                elem.id = elem.name.replace(/ /g, '-').replace(/[^A-Za-z0-9_-]/g, '')
-                return elem;
-            });
+    $scope.filter = {gmod:"", term:"", perPage:5};
+    $scope.sortKey = "name";
+    $scope.order ='+';
+    $scope.plugins = plugin_data.map(function(elem){
+        elem.id = elem.name.replace(/ /g, '-').replace(/[^A-Za-z0-9_-]/g, '')
+        return elem;
+    });
 
-			$scope.currentPage =  $location.hash() || 1;
-
-			$scope.pageChangeHandler = function(newPage){
-				$scope.currentPage = newPage;
-				$location.hash(newPage);
-			}
+    $scope.currentPage =  $location.hash() || 1;
+    $scope.pageChangeHandler = function(newPage){
+        $scope.currentPage = newPage;
+        $location.hash(newPage);
+    }
 
 });
 
