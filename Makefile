@@ -42,7 +42,7 @@ deploy:
 node_modules: package.json
 	$(installer) install
 
-js/plugins.json: node_modules
+js/plugins.json: node_modules plugins.yaml
 	node scripts/prepare_api.js > $@
 
 lint:

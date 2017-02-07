@@ -19,6 +19,7 @@
   name: gccontent
   license: MIT
   demo: "gccontent&tracks=DNA,GCContentXY"
+  image: gccontent.png
 - author: Colin Diesh
   description: |
    A JBrowse plugin for indexing names with elasticsearch.
@@ -39,6 +40,7 @@
   gmodProject: JBrowse
   location: https://github.com/cmdcolin/gwasviewer
   name: gwasviewer
+  image: gwasviewer.png
 - author: Colin Diesh
   description: |
     A JBrowse plugin that fetches info from MyVariant.info and MyGene.info and
@@ -46,12 +48,14 @@
   gmodProject: JBrowse
   location: https://github.com/cmdcolin/myvariantviewer
   name: myvariantviewer
+  demo: "myvariantviewer&tracks=DNA,MyGenev3,clinvar"
 - author: Colin Diesh
   description: |
     A JBrowse plugin for viewing data from the GA4GH APIs.
   gmodProject: JBrowse
   location: https://github.com/cmdcolin/ga4ghviewer
   name: ga4ghviewer
+  demo: "ga4ghviewer&tracks=DNA,1000genomes"
 - author: Colin Diesh
   description: |
     A JBrowse plugin for re-mapping coordinates "on the fly".

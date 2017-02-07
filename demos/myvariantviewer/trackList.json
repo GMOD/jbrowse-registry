@@ -1,0 +1,112 @@
+{
+    "tracks":[
+      {
+         "storeClass" : "MyVariantViewer/Store/SeqFeature/Genes_v3",
+         "urlTemplate" : "https://mygene.info/v3/query?q={refseq}:{start}-{end}&fields=all&size=1000&email=colin.diesh@gmail.com",
+         "subParts" : [
+            "exon"
+         ],
+         "type" : "CanvasFeatures",
+         "key" : "MyGene.info v3",
+         "label": "MyGenev3"
+      },
+      {
+         "storeClass" : "MyVariantViewer/Store/SeqFeature/Genes",
+         "urlTemplate" : "https://mygene.info/v2/query?q={refseq}:{start}-{end}&fields=all&size=1000&email=colin.diesh@gmail.com",
+         "subParts" : [
+            "exon"
+         ],
+         "type" : "CanvasFeatures",
+         "label" : "MyGene.info v2"
+      },
+      {
+         "style" : {
+            "color" : "{colorfun}",
+            "featureScale" : 0.5
+         },
+         "baseUrl" : "https://myvariant.info/v1/",
+         "storeClass" : "MyVariantViewer/Store/SeqFeature/Variants",
+         "urlTemplate" : "query?q={refseq}:{start}-{end}&size=1000&email=colin.diesh@gmail.com&assembly=hg38",
+         "type" : "CanvasFeatures",
+         "category": "MyVariant.info",
+         "label" : "MyVariant.info",
+         "optimizer": true,
+         "glyph" : "MyVariantViewer/View/FeatureGlyph/Diamond"
+      },
+      {
+         "style" : {
+            "color" : "#665"
+         },
+         "baseUrl" : "https://myvariant.info/v1/",
+         "storeClass" : "MyVariantViewer/Store/SeqFeature/Variants",
+         "urlTemplate" : "query?q={refseq}:{start}-{end} AND _exists_:evs&size=1000&email=colin.diesh@gmail.com&fields=evs&assembly=hg38",
+         "type" : "CanvasFeatures",
+         "category": "MyVariant.info",
+         "label" : "MyVariant.info evs",
+         "optimizer": true,
+         "glyph" : "MyVariantViewer/View/FeatureGlyph/Diamond"
+      },
+      {
+         "style" : {
+            "color" : "cyan"
+         },
+         "baseUrl" : "https://myvariant.info/v1/",
+         "storeClass" : "MyVariantViewer/Store/SeqFeature/Variants",
+         "urlTemplate" : "query?q={refseq}:{start}-{end} AND _exists_:clinvar&size=1000&email=colin.diesh@gmail.com&fields=clinvar&assembly=hg38",
+         "optimizer": true,
+         "type" : "CanvasFeatures",
+         "category": "MyVariant.info",
+         "label" : "clinvar",
+         "key": "MyVariant.info clinvar",
+         "glyph" : "MyVariantViewer/View/FeatureGlyph/Diamond"
+      },
+      {
+         "style" : {
+            "color" : "#5e4"
+         },
+         "baseUrl" : "https://myvariant.info/v1/",
+         "storeClass" : "MyVariantViewer/Store/SeqFeature/Variants",
+         "urlTemplate" : "query?q={refseq}:{start}-{end} AND _exists_:dbsnp&size=1000&email=colin.diesh@gmail.com&fields=dbsnp&assembly=hg38",
+         "type" : "CanvasFeatures",
+         "label" : "MyVariant.info dbsnp",
+         "category": "MyVariant.info",
+         "optimizer": true,
+         "glyph" : "MyVariantViewer/View/FeatureGlyph/Diamond"
+      },
+      {
+         "style" : {
+            "color" : "#742"
+         },
+         "baseUrl" : "https://myvariant.info/v1/",
+         "storeClass" : "MyVariantViewer/Store/SeqFeature/Variants",
+         "category": "MyVariant.info",
+         "urlTemplate" : "query?q={refseq}:{start}-{end} AND _exists_:dbnsfp&size=1000&email=colin.diesh@gmail.com&fields=dbnsfp&assembly=hg38",
+         "type" : "CanvasFeatures",
+         "label" : "MyVariant.info dbnsfp",
+         "glyph" : "MyVariantViewer/View/FeatureGlyph/Diamond",
+         "optimizer": true
+      },
+      {
+         "style" : {
+            "color" : "#924"
+         },
+         "baseUrl" : "https://myvariant.info/v1/",
+         "storeClass" : "MyVariantViewer/Store/SeqFeature/Variants",
+         "category": "MyVariant.info",
+         "urlTemplate" : "query?q={refseq}:{start}-{end} AND _exists_:uniprot&size=1000&email=colin.diesh@gmail.com&fields=uniprot&assembly=hg38",
+         "type" : "CanvasFeatures",
+         "label" : "MyVariant.info uniprot",
+         "glyph" : "MyVariantViewer/View/FeatureGlyph/Diamond",
+         "optimizer": true
+      }
+  ],
+  "include": ["functions.conf"],
+  "highResolutionMode":2,
+  "classicMenu": true,
+  "plugins" : [
+      {
+          "location" : "https://cdn.rawgit.com/elsiklab/myvariantviewer/master",
+          "name" : "MyVariantViewer"
+      }
+  ]
+}
