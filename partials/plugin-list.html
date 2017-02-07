@@ -1,14 +1,14 @@
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="input-group">
-            <input type="text" class="form-control" placeholder="Filter plugins..." ng-model="filter.term" aria-describedby="plug-addon">
+            <input type="text" class="form-control" placeholder="Filter plugins..." ng-model="plug.filter.term" aria-describedby="plug-addon">
             <span id="plug-addon" class="input-group-addon glyphicon glyphicon-search" aria-hidden="true"></span>
         </div>
         <div class="filter-group">
        	    <form class="form-inline filter-form" role="form">
                 <div class="form-group">
                     <label>Project:</label>
-                    <select name="projectSelect" required="required" class="form-control" ng-model="filter.gmod">
+                    <select name="projectSelect" required="required" class="form-control" ng-model="plug.filter.gmod">
                         <option value="">All</option>
                         <option value="Apollo">Apollo</option>
                         <option value="GBrowse">GBrowse</option>
@@ -18,7 +18,7 @@
                 </div>
                 <div class="form-group">
                     <label>Sort By:</label>
-                    <select name="projectSelect" required="required" class="form-control" ng-model="sortKey">
+                    <select name="projectSelect" required="required" class="form-control" ng-model="plug.sortKey">
                         <option value="name">Name</option>
                         <option value="author">Author</option>
                         <option value="added">Date added</option>
@@ -27,14 +27,14 @@
                 </div>
                 <div class="form-group">
                     <label>Order:</label>
-                    <select name="orderSelect" required="required" class="form-control" ng-model="order">
+                    <select name="orderSelect" required="required" class="form-control" ng-model="plug.order">
                         <option value= '+' selected>Ascending</option>
                         <option value= '-'>Descending</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <label>Plugins per page:</label>
-                    <input type="text" class="form-control per-page-control" placeholder="5" ng-model="filter.perPage" >
+                    <input type="text" class="form-control per-page-control" placeholder="5" ng-model="plug.filter.perPage" >
                 </div>
             </form>
         </div>
@@ -43,8 +43,8 @@
 </nav>
 
 <div class="plugin-list">
-    <div class="list-group-item" dir-paginate="plugin in plugins |orderBy:[order+sortKey,'+name']|
-        filter:filter.gmod:strict:plugin.gmodProject | filter:filter.term |itemsPerPage:filter.perPage as results" current-page="currentPage" pagination-id="plugins">
+    <div class="list-group-item" dir-paginate="plugin in plug.plugins |orderBy:[plug.order+plug.sortKey,'+name']|
+        filter:plug.filter.gmod:strict:plugin.gmodProject | filter:plug.filter.term |itemsPerPage:plug.filter.perPage as results" pagination-id="plugins">
          <div id="plugin-{{plugin.id}}">
              <div class="row plugin-title">
                 <div class="col-xs-9 plugin-name">
@@ -110,7 +110,6 @@
        pagination-id="plugins"
        max-size="5"
        direction-links="true"
-	   on-page-change="pageChangeHandler(newPageNumber)"
        boundary-links="true" autohide>
     </dir-pagination-controls>
 </div>
