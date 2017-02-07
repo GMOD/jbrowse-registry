@@ -11,13 +11,13 @@ var app = angular.module('plugD', [
 app.controller("PluginController",function($scope,$location){
     $scope.filter = {gmod:"", term:"", perPage:5};
     $scope.currentPage = 1;
-    
-	// URI control querry string
-    var search = $location.search();	
+
+    // URI control querry string
+    var search = $location.search();
     var page = search.page || $scope.currentPage;
     var per = search.perPage || $scope.filter.perPage;
     $location.search({page:page, perPage:per});
-		
+
 
     $scope.sortKey = "name";
     $scope.order ='+';
@@ -26,18 +26,18 @@ app.controller("PluginController",function($scope,$location){
         return elem;
     });
 
-	// pagination function on page change
+    // pagination function on page change
     $scope.pageChangeHandler = function(newPage){
         $scope.currentPage = newPage;
         $location.search({page:newPage,perPage:$scope.filter.perPage});
     }
 
-	// Watch querry string for changes and update
+    // Watch querry string for changes and update
     $scope.$watch(function(){
         return $location.search();
     }, function(value){
        $scope.filter.perPage = value.perPage;
-	   $scope.currentPage = value.page;
+       $scope.currentPage = value.page;
     })
 
 
@@ -64,11 +64,11 @@ app.directive("versionInfo", function(){
 });
 
 app.filter("spdx_formatter", ["$sce", function($sce){
-	return function(input) {
-		if (input) {
-			var license = spdxLicenses.spdx(input);
-			return $sce.trustAs('html', license.name.replace(/^"/, '').replace(/"$/, '').replace(/""/g, '"'));
-		}
-		return;
-	};
+    return function(input) {
+        if (input) {
+            var license = spdxLicenses.spdx(input);
+            return $sce.trustAs('html', license.name.replace(/^"/, '').replace(/"$/, '').replace(/""/g, '"'));
+        }
+        return;
+    };
 }]);
