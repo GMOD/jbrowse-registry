@@ -17,6 +17,12 @@ run: node_modules js/plugins.json ## Run the server
 	@echo "********************************"
 	./node_modules/.bin/webpack-dev-server --progress --colors --devtool cheap-module-inline-source-map --hot --debug --inline --host 127.0.0.1 --port 8000
 
+run_prod: node_modules js/plugins.json ## Run the server
+	@echo "********************************"
+	@echo "* open http://localhost:8000/ *"
+	@echo "********************************"
+	./node_modules/.bin/webpack-dev-server --progress --colors --devtool source-map --optimize-minimize --optimize-dedupe --host 127.0.0.1 --port 8000
+
 build: node_modules js/plugins.json ## Compile a project for deployment
 	./node_modules/.bin/webpack  --progress --colors --devtool source-map --optimize-minimize --optimize-dedupe
 

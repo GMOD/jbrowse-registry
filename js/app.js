@@ -8,7 +8,7 @@ var app = angular.module('plugD', [
     'angularUtils.directives.dirPagination'
 ]);
 
-app.controller("PluginController",function($scope,$location){
+app.controller("PluginController",['$scope', '$location', function($scope,$location){
     $scope.filter = {gmod:"", term:"", perPage:5};
     $scope.currentPage = 1;
 
@@ -41,7 +41,7 @@ app.controller("PluginController",function($scope,$location){
     })
 
 
-});
+}]);
 
 
 app.directive("pluginList", function(){
