@@ -233,7 +233,7 @@
   ],
   "plugins" : [
       {
-          "location" : "https://cdn.rawgit.com/elsiklab/myvariantviewer/master",
+          "location" : "https://rawgit.com/elsiklab/myvariantviewer/master",
           "name" : "MyVariantViewer"
       }
   ],
