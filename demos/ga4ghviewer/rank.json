@@ -1,0 +1,343 @@
+{
+    "tracks": [
+      {
+         "style" : {
+            "color" : "function(feature) { return ({getcol})(feature,'dbnsfp_phastcons','20way','mammalian_rankscore'); }"
+         },
+         "baseUrl" : "https://myvariant.info/v1/",
+         "storeClass" : "MyVariantViewer/Store/SeqFeature/Variants",
+         "heightScaler": 100,
+         "maxHeight": 110,
+         "scoreFun": "function(feature) { return ({getval})(feature,'dbnsfp_phastcons','20way','mammalian_rankscore'); }",
+         "category": "Custom coloring/dbNSFP plotter",
+         "urlTemplate" : "query?q=dbnsfp.chrom:[{refseq} TO {refseq}] AND dbnsfp.hg19.start:<={end} AND dbnsfp.hg19.end:>={start}&size=1000&email=colin.diesh@gmail.com&fields=dbnsfp.phastcons",
+         "type" : "GWASViewer/View/Track/VariantPlotter",
+         "label" : "(phastCons 20-way mammalian_rankscore)",
+         "optimizer": true,
+         "refSeqTransform": true
+      },
+      
+      {
+         "style" : {
+            "color" : "function(feature) { return ({getcol})(feature,'dbnsfp_phastcons','7way','vertebrate_rankscore'); }"
+         },
+         "baseUrl" : "https://myvariant.info/v1/",
+         "storeClass" : "MyVariantViewer/Store/SeqFeature/Variants",
+         "heightScaler": 100,
+         "maxHeight": 110,
+         "scoreFun": "function(feature) { return ({getval})(feature,'dbnsfp_phastcons','7way','vertebrate_rankscore'); }",
+         "category": "Custom coloring/dbNSFP plotter",
+         "urlTemplate" : "query?q=dbnsfp.chrom:[{refseq} TO {refseq}] AND dbnsfp.hg19.start:<={end} AND dbnsfp.hg19.end:>={start}&size=1000&email=colin.diesh@gmail.com&fields=dbnsfp.phastcons",
+         "type" : "GWASViewer/View/Track/VariantPlotter",
+         "label" : "(phastCons 7-way vertebrate_rankscore)",
+         "optimizer": true,
+         "refSeqTransform": true
+      },
+      {
+         "style" : {
+            "color" : "function(feature) { return ({getcol})(feature,'dbnsfp_phylo','p20way','mammalian_rankscore'); }"
+         },
+         "baseUrl" : "https://myvariant.info/v1/",
+         "storeClass" : "MyVariantViewer/Store/SeqFeature/Variants",
+         "heightScaler": 100,
+         "maxHeight": 110,
+         "scoreFun": "function(feature) { return ({getval})(feature,'dbnsfp_phylo','p20way','mammalian_rankscore'); }",
+         "category": "Custom coloring/dbNSFP plotter",
+         "urlTemplate" : "query?q=dbnsfp.chrom:[{refseq} TO {refseq}] AND dbnsfp.hg19.start:<={end} AND dbnsfp.hg19.end:>={start}&size=1000&email=colin.diesh@gmail.com&fields=dbnsfp.phylo",
+         "type" : "GWASViewer/View/Track/VariantPlotter",
+         "label" : "(phylo 20-way mammalian_rankscore)",
+         "optimizer": true,
+         "refSeqTransform": true
+      },
+
+      {
+         "style" : {
+            "color" : "function(feature) { return ({getcol})(feature,'dbnsfp_phylo','p7way','vertebrate_rankscore'); }"
+         },
+         "baseUrl" : "https://myvariant.info/v1/",
+         "storeClass" : "MyVariantViewer/Store/SeqFeature/Variants",
+         "heightScaler": 100,
+         "maxHeight": 110,
+         "scoreFun": "function(feature) { return ({getval})(feature,'dbnsfp_phylo','p7way','vertebrate_rankscore'); }",
+         "category": "Custom coloring/dbNSFP plotter",
+         "urlTemplate" : "query?q=dbnsfp.chrom:[{refseq} TO {refseq}] AND dbnsfp.hg19.start:<={end} AND dbnsfp.hg19.end:>={start}&size=1000&email=colin.diesh@gmail.com&fields=dbnsfp.phylo",
+         "type" : "GWASViewer/View/Track/VariantPlotter",
+         "label" : "(phylo 7-way vertebrate_rankscore)",
+         "optimizer": true,
+         "refSeqTransform": true
+      },
+      {
+         "style" : {
+            "color" : "function(feature) { return ({getcol})(feature,'dbnsfp_gerp++','rs_rankscore'); }"
+         },
+         "baseUrl" : "https://myvariant.info/v1/",
+         "storeClass" : "MyVariantViewer/Store/SeqFeature/Variants",
+         "scoreFun": "function(feature) { return ({getval})(feature,'dbnsfp_gerp++','rs_rankscore'); }",
+         "category": "Custom coloring/dbNSFP plotter",
+         "heightScaler": 100,
+         "maxHeight": 110,
+         "urlTemplate" : "query?q=dbnsfp.chrom:[{refseq} TO {refseq}] AND dbnsfp.hg19.start:<={end} AND dbnsfp.hg19.end:>={start}&size=1000&email=colin.diesh@gmail.com&fields=dbnsfp.gerp%2B%2B",
+         "type" : "GWASViewer/View/Track/VariantPlotter",
+         "label" : "(gerp++ rs_rankscore)",
+         "optimizer": true,
+         "refSeqTransform": true
+      },
+      {
+         "style" : {
+            "color" : "function(feature) { return ({getcol})(feature,'dbnsfp_fathmm-mkl','coding_rankscore'); }"
+         },
+         "baseUrl" : "https://myvariant.info/v1/",
+         "storeClass" : "MyVariantViewer/Store/SeqFeature/Variants",
+         "heightScaler": 100,
+         "maxHeight": 110,
+         "scoreFun": "function(feature) { return ({getval})(feature,'dbnsfp_fathmm-mkl','coding_rankscore'); }",
+         "category": "Custom coloring/dbNSFP plotter",
+         "urlTemplate" : "query?q=dbnsfp.chrom:[{refseq} TO {refseq}] AND dbnsfp.hg19.start:<={end} AND dbnsfp.hg19.end:>={start}&size=1000&email=colin.diesh@gmail.com&fields=dbnsfp.fathmm-mkl",
+         "type" : "GWASViewer/View/Track/VariantPlotter",
+         "label" : "(fathmm-mkl coding_rankscore)",
+         "optimizer": true,
+         "refSeqTransform": true
+      },
+      {
+         "style" : {
+            "color" : "function(feature) { return ({getcol})(feature,'dbnsfp_provean','rankscore'); }"
+         },
+         "baseUrl" : "https://myvariant.info/v1/",
+         "storeClass" : "MyVariantViewer/Store/SeqFeature/Variants",
+         "scoreFun": "function(feature) { return ({getval})(feature,'dbnsfp_provean','rankscore'); }",
+         "heightScaler": 100,
+         "maxHeight": 110,
+         "category": "Custom coloring/dbNSFP plotter",
+         "urlTemplate" : "query?q=dbnsfp.chrom:[{refseq} TO {refseq}] AND dbnsfp.hg19.start:<={end} AND dbnsfp.hg19.end:>={start}&size=1000&email=colin.diesh@gmail.com&fields=dbnsfp.provean",
+         "type" : "GWASViewer/View/Track/VariantPlotter",
+         "label" : "(provean rankscore)",
+         "optimizer": true,
+         "refSeqTransform": true
+      },
+      {
+         "style" : {
+            "color" : "function(feature) { return ({getcol})(feature,'dbnsfp_polyphen2','hvar','rankscore'); }"
+         },
+         "baseUrl" : "https://myvariant.info/v1/",
+         "storeClass" : "MyVariantViewer/Store/SeqFeature/Variants",
+         "scoreFun": "function(feature) { return ({getval})(feature,'dbnsfp_polyphen2','hvar','rankscore'); }",
+         "category": "Custom coloring/dbNSFP plotter",
+         "urlTemplate" : "query?q=dbnsfp.chrom:[{refseq} TO {refseq}] AND dbnsfp.hg19.start:<={end} AND dbnsfp.hg19.end:>={start}&size=1000&email=colin.diesh@gmail.com&fields=dbnsfp.polyphen2.hvar",
+         "type" : "GWASViewer/View/Track/VariantPlotter",
+         "label" : "(polyphen2 hvar rankscore)",
+         "heightScaler": 100,
+         "maxHeight": 110,
+         "optimizer": true,
+         "refSeqTransform": true
+      },
+      {
+         "style" : {
+            "color" : "function(feature) { return ({getcol})(feature,'dbnsfp_polyphen2','hdiv','rankscore'); }"
+         },
+         "baseUrl" : "https://myvariant.info/v1/",
+         "storeClass" : "MyVariantViewer/Store/SeqFeature/Variants",
+         "scoreFun": "function(feature) { return ({getval})(feature,'dbnsfp_polyphen2','hdiv','rankscore'); }",
+         "category": "Custom coloring/dbNSFP plotter",
+         "urlTemplate" : "query?q=dbnsfp.chrom:[{refseq} TO {refseq}] AND dbnsfp.hg19.start:<={end} AND dbnsfp.hg19.end:>={start}&size=1000&email=colin.diesh@gmail.com&fields=dbnsfp.polyphen2.hdiv",
+         "type" : "GWASViewer/View/Track/VariantPlotter",
+         "label" : "(polyphen2 hdiv rankscore)",
+         "heightScaler": 100,
+         "maxHeight": 110,
+         "optimizer": true,
+         "refSeqTransform": true
+      },
+      {
+         "style" : {
+            "color" : "function(feature) { return ({getcol})(feature,'dbnsfp_huvec','fitcons_rankscore'); }"
+         },
+         "baseUrl" : "https://myvariant.info/v1/",
+         "scoreFun": "function(feature) { return ({getval})(feature,'dbnsfp_huvec','fitcons_rankscore'); }",
+         "heightScaler": 100,
+         "maxHeight": 110,
+         "storeClass" : "MyVariantViewer/Store/SeqFeature/Variants",
+         "category": "Custom coloring/dbNSFP plotter",
+         "urlTemplate" : "query?q=dbnsfp.chrom:[{refseq} TO {refseq}] AND dbnsfp.hg19.start:<={end} AND dbnsfp.hg19.end:>={start}&size=1000&email=colin.diesh@gmail.com&fields=dbnsfp.huvec",
+         "type" : "GWASViewer/View/Track/VariantPlotter",
+         "label" : "(huvec fitcons_rankscore)",
+         "optimizer": true,
+         "refSeqTransform": true
+      },
+      {
+         "style" : {
+            "color" : "function(feature) { return ({getcol})(feature,'dbnsfp_fathmm','rankscore'); }"
+         },
+         "scoreFun": "function(feature) { return ({getval})(feature,'dbnsfp_fathmm','rankscore'); }",
+         "baseUrl" : "https://myvariant.info/v1/",
+         "storeClass" : "MyVariantViewer/Store/SeqFeature/Variants",
+         "category": "Custom coloring/dbNSFP plotter",
+         "heightScaler": 100,
+         "maxHeight": 110,
+         "urlTemplate" : "query?q=dbnsfp.chrom:[{refseq} TO {refseq}] AND dbnsfp.hg19.start:<={end} AND dbnsfp.hg19.end:>={start}&size=1000&email=colin.diesh@gmail.com&fields=dbnsfp.fathmm",
+         "type" : "GWASViewer/View/Track/VariantPlotter",
+         "label" : "(fathmm rankscore)",
+         "optimizer": true,
+         "refSeqTransform": true
+      },
+      {
+         "style" : {
+            "color" : "function(feature) { return ({getcol})(feature,'dbnsfp_gm12878','fitcons_rankscore'); }"
+         },
+         "baseUrl" : "https://myvariant.info/v1/",
+         "scoreFun": "function(feature) { return ({getval})(feature,'dbnsfp_gm12878','fitcons_rankscore'); }",
+         "storeClass" : "MyVariantViewer/Store/SeqFeature/Variants",
+         "category": "Custom coloring/dbNSFP plotter",
+         "heightScaler": 100,
+         "maxHeight": 110,
+         "urlTemplate" : "query?q=dbnsfp.chrom:[{refseq} TO {refseq}] AND dbnsfp.hg19.start:<={end} AND dbnsfp.hg19.end:>={start}&size=1000&email=colin.diesh@gmail.com&fields=dbnsfp.gm12878",
+         "type" : "GWASViewer/View/Track/VariantPlotter",
+         "label" : "(gm12878 fitcons_rankscore)",
+         "optimizer": true,
+         "refSeqTransform": true
+      },
+      {
+         "style" : {
+            "color" : "function(feature) { return ({getcol})(feature,'dbnsfp_h1-hesc','fitcons_rankscore'); }"
+         },
+         "heightScaler": 100,
+         "maxHeight": 110,
+         "baseUrl" : "https://myvariant.info/v1/",
+         "scoreFun": "function(feature) { return ({getval})(feature,'dbnsfp_h1-hesc','fitcons_rankscore'); }",
+         "storeClass" : "MyVariantViewer/Store/SeqFeature/Variants",
+         "category": "Custom coloring/dbNSFP plotter",
+         "urlTemplate" : "query?q=dbnsfp.chrom:[{refseq} TO {refseq}] AND dbnsfp.hg19.start:<={end} AND dbnsfp.hg19.end:>={start}&size=1000&email=colin.diesh@gmail.com&fields=dbnsfp.h1-hesc",
+         "type" : "GWASViewer/View/Track/VariantPlotter",
+         "label" : "(h1-hesc fitcons_rankscore)",
+         "optimizer": true,
+         "refSeqTransform": true
+      },
+      {
+         "style" : {
+            "color" : "function(feature) { return ({getcol})(feature,'dbnsfp_metalr','rankscore'); }"
+         },
+         "heightScaler": 100,
+         "maxHeight": 110,
+         "baseUrl" : "https://myvariant.info/v1/",
+         "storeClass" : "MyVariantViewer/Store/SeqFeature/Variants",
+         "scoreFun": "function(feature) { return ({getval})(feature,'dbnsfp_metalr','rankscore'); }",
+         "storeClass" : "MyVariantViewer/Store/SeqFeature/Variants",
+         "category": "Custom coloring/dbNSFP plotter",
+         "urlTemplate" : "query?q=dbnsfp.chrom:[{refseq} TO {refseq}] AND dbnsfp.hg19.start:<={end} AND dbnsfp.hg19.end:>={start}&size=1000&email=colin.diesh@gmail.com&fields=dbnsfp.metalr",
+         "type" : "GWASViewer/View/Track/VariantPlotter",
+         "label" : "(metalr rankscore)",
+         "optimizer": true,
+         "refSeqTransform": true
+      },
+      {
+         "style" : {
+            "color" : "function(feature) { return ({getcol})(feature,'dbnsfp_integrated','fitcons_rankscore'); }"
+         },
+         "baseUrl" : "https://myvariant.info/v1/",
+         "storeClass" : "MyVariantViewer/Store/SeqFeature/Variants",
+         "scoreFun": "function(feature) { return ({getval})(feature,'dbnsfp_integrated','fitcons_rankscore'); }",
+         "heightScaler": 100,
+         "maxHeight": 110,
+         "category": "Custom coloring/dbNSFP plotter",
+         "urlTemplate" : "query?q=dbnsfp.chrom:[{refseq} TO {refseq}] AND dbnsfp.hg19.start:<={end} AND dbnsfp.hg19.end:>={start}&size=1000&email=colin.diesh@gmail.com&fields=dbnsfp.integrated",
+         "type" : "GWASViewer/View/Track/VariantPlotter",
+         "label" : "(integrated fitcons_rankscore)",
+         "optimizer": true,
+         "refSeqTransform": true
+      },
+      {
+         "style" : {
+            "color" : "function(feature) { return ({getcol})(feature,'dbnsfp_lrt','converted_rankscore'); }"
+         },
+         "baseUrl" : "https://myvariant.info/v1/",
+         "storeClass" : "MyVariantViewer/Store/SeqFeature/Variants",
+         "scoreFun": "function(feature) { return ({getval})(feature,'dbnsfp_lrt','converted_rankscore'); }",
+         "heightScaler": 100,
+         "maxHeight": 110,
+         "category": "Custom coloring/dbNSFP plotter",
+         "urlTemplate" : "query?q=dbnsfp.chrom:[{refseq} TO {refseq}] AND dbnsfp.hg19.start:<={end} AND dbnsfp.hg19.end:>={start}&size=1000&email=colin.diesh@gmail.com&fields=dbnsfp.lrt",
+         "type" : "GWASViewer/View/Track/VariantPlotter",
+         "label" : "(lrt converted_rankscore)",
+         "optimizer": true,
+         "refSeqTransform": true
+      },
+      {
+         "style" : {
+            "color" : "function(feature) { return ({getcol})(feature,'dbnsfp_metasvm','rankscore'); }"
+         },
+         "baseUrl" : "https://myvariant.info/v1/",
+         "scoreFun": "function(feature) { return ({getval})(feature, 'dbnsfp_metasvm','rankscore'); }",
+         "storeClass" : "MyVariantViewer/Store/SeqFeature/Variants",
+         "heightScaler": 100,
+         "maxHeight": 110,
+         "category": "Custom coloring/dbNSFP plotter",
+         "urlTemplate" : "query?q=dbnsfp.chrom:[{refseq} TO {refseq}] AND dbnsfp.hg19.start:<={end} AND dbnsfp.hg19.end:>={start}&size=1000&email=colin.diesh@gmail.com&fields=dbnsfp.metasvm",
+         "type" : "GWASViewer/View/Track/VariantPlotter",
+         "label" : "(metasvm rankscore)",
+         "optimizer": true,
+         "refSeqTransform": true
+      },
+      {
+         "style" : {
+            "color" : "function(feature) { return ({getcol})(feature, 'dbnsfp_mutationtaster','converted_rankscore'); }"
+         },
+         "baseUrl" : "https://myvariant.info/v1/",
+         "scoreFun" : "function(feature) { return ({getval})(feature, 'dbnsfp_mutationtaster','converted_rankscore'); }",
+         "storeClass" : "MyVariantViewer/Store/SeqFeature/Variants",
+         "category": "Custom coloring/dbNSFP plotter",
+         "heightScaler": 100,
+         "maxHeight": 110,
+         "urlTemplate" : "query?q=dbnsfp.chrom:[{refseq} TO {refseq}] AND dbnsfp.hg19.start:<={end} AND dbnsfp.hg19.end:>={start}&size=1000&email=colin.diesh@gmail.com&fields=dbnsfp.mutationtaster",
+         "type" : "GWASViewer/View/Track/VariantPlotter",
+         "label" : "(mutationtaster rankscore)",
+         "optimizer": true,
+         "refSeqTransform": true
+      },
+      {
+         "style" : {
+            "color" : "function(feature) { return ({getcol})(feature, 'dbnsfp_mutationassessor','rankscore'); }"
+         },
+         "baseUrl" : "https://myvariant.info/v1/",
+         "scoreFun" : "function(feature) { return ({getval})(feature, 'dbnsfp_mutationassessor','rankscore'); }",
+         "storeClass" : "MyVariantViewer/Store/SeqFeature/Variants",
+         "category": "Custom coloring/dbNSFP plotter",
+         "heightScaler": 100,
+         "maxHeight": 110,
+         "urlTemplate" : "query?q=dbnsfp.chrom:[{refseq} TO {refseq}] AND dbnsfp.hg19.start:<={end} AND dbnsfp.hg19.end:>={start}&size=1000&email=colin.diesh@gmail.com&fields=dbnsfp.mutationassessor",
+         "type" : "GWASViewer/View/Track/VariantPlotter",
+         "label" : "(mutationassessor rankscore)",
+         "optimizer": true,
+         "refSeqTransform": true
+      },
+      {
+         "style" : {
+            "color" : "function(feature) { return ({getcol})(feature, 'dbnsfp_siphy_29way','logodds_rankscore'); }"
+         },
+         "baseUrl" : "https://myvariant.info/v1/",
+         "scoreFun": "function(feature) { return ({getval})(feature, 'dbnsfp_siphy_29way','logodds_rankscore'); }",
+         "storeClass" : "MyVariantViewer/Store/SeqFeature/Variants",
+         "category": "Custom coloring/dbNSFP plotter",
+         "urlTemplate" : "query?q=dbnsfp.chrom:[{refseq} TO {refseq}] AND dbnsfp.hg19.start:<={end} AND dbnsfp.hg19.end:>={start}&size=1000&email=colin.diesh@gmail.com&fields=dbnsfp.siphy_29way",
+         "type" : "GWASViewer/View/Track/VariantPlotter",
+         "label" : "(sift 29way logodds_rankscore)",
+         "heightScaler": 100,
+         "maxHeight": 110,
+         "optimizer": true,
+         "refSeqTransform": true
+      },
+      {
+         "style" : {
+            "color" : "function(feature) { return ({getcol})(feature, 'dbnsfp_sift','converted_rankscore'); }"
+         },
+         "scoreFun": "function(feature) { return ({getval})(feature, 'dbnsfp_sift','converted_rankscore'); }",
+         "baseUrl" : "https://myvariant.info/v1/",
+         "storeClass" : "MyVariantViewer/Store/SeqFeature/Variants",
+         "category": "Custom coloring/dbNSFP plotter",
+         "urlTemplate" : "query?q=dbnsfp.chrom:[{refseq} TO {refseq}] AND dbnsfp.hg19.start:<={end} AND dbnsfp.hg19.end:>={start}&size=1000&email=colin.diesh@gmail.com&fields=dbnsfp.sift",
+         "heightScaler": 100,
+         "maxHeight": 110,
+         "type" : "GWASViewer/View/Track/VariantPlotter",
+         "label" : "(sift converted_rankscore)",
+         "optimizer": true,
+         "refSeqTransform": true
+      }
+    ]
+}

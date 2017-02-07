@@ -1,0 +1,31 @@
+{
+   "tracks" : [
+      {
+         "type": "CanvasFeatures",
+         "urlTemplate": "http://1kgenomes.ga4gh.org",
+         "storeClass": "GA4GHViewer/Store/SeqFeature/1000genomes",
+         "label": "GA4GH 1kg (phase3)",
+         "callSetIds":[]
+      },
+      {
+         "type": "CanvasFeatures",
+         "urlTemplate": "http://1kgenomes.ga4gh.org",
+         "storeClass": "GA4GHViewer/Store/SeqFeature/1000genomes",
+         "key": "GA4GH 1kg features",
+         "label": "1000genomes",
+         "functional": true,
+         "callSetIds":[]
+      }
+  ],
+  "highResolutionMode":2,
+  "plugins" : [
+      {
+          "location" : "https://cdn.rawgit.com/elsiklab/multivariantviewer/master",
+          "name" : "MultiVariantViewer"
+      },
+      {
+          "location" : "https://cdn.rawgit.com/elsiklab/ga4ghviewer/master",
+          "name" : "GA4GHViewer"
+      }
+  ]
+}
