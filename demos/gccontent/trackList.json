@@ -2,7 +2,7 @@
 	"formatVersion" : 1,
 	"plugins" : [
 		{
-			"location" : "https://rawgit.com/elsiklab/gccontent/5c8b0582ecebf9edf684c76af8075fb3d30ec3fa",
+			"location" : "https://rawgit.com/elsiklab/gccontent/master",
 			"name" : "GCContent"
 		}
 	],

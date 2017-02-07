@@ -20,11 +20,11 @@
   "highResolutionMode":2,
   "plugins" : [
       {
-          "location" : "https://cdn.rawgit.com/elsiklab/multivariantviewer/master",
+          "location" : "https://rawgit.com/elsiklab/multivariantviewer/master",
           "name" : "MultiVariantViewer"
       },
       {
-          "location" : "https://cdn.rawgit.com/elsiklab/ga4ghviewer/master",
+          "location" : "https://rawgit.com/elsiklab/ga4ghviewer/master",
           "name" : "GA4GHViewer"
       }
   ]
