@@ -47,6 +47,7 @@
     displays them.
   gmodProject: JBrowse
   location: https://github.com/cmdcolin/myvariantviewer
+  image: myvariantviewer.png
   name: myvariantviewer
   demo: "myvariantviewer&tracks=DNA,MyGenev3,clinvar"
 - author: Colin Diesh
