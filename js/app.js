@@ -8,23 +8,30 @@ var app = angular.module('plugD', [
     'angularUtils.directives.dirPagination'
 ]);
 
-app.controller("PluginController",function(){
+app.controller("PluginController",function($scope,$location){
+            $scope.filter = {gmod:"", term:"", perPage:5};
+            $scope.sortKey = "name";
+            $scope.order ='+';
+            $scope.plugins = plugin_data.map(function(elem){
+                elem.id = elem.name.replace(/ /g, '-').replace(/[^A-Za-z0-9_-]/g, '')
+                return elem;
+            });
+
+			$scope.currentPage =  $location.hash() || 1;
+
+			$scope.pageChangeHandler = function(newPage){
+				$scope.currentPage = newPage;
+				$location.hash(newPage);
+			}
+
 });
+
 
 app.directive("pluginList", function(){
     return {
         restrict:"E",
         templateUrl:"partials/plugin-list.html",
-        controller: function(){
-            this.filter = {gmod:"", term:"", perPage:5};
-            this.sortKey = "name";
-            this.order ='+';
-            this.plugins = plugin_data.map(function(elem){
-                elem.id = elem.name.replace(/ /g, '-').replace(/[^A-Za-z0-9_-]/g, '')
-                return elem;
-            });
-        },
-        controllerAs:"plug"
+        controller: "PluginController"
     }
 });
 
