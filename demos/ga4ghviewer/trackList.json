@@ -16,7 +16,7 @@
           "name" : "MultiVariantViewer"
       },
       {
-          "location" : "http://localhost/jbrowse/plugins/GA4GHViewer",
+          "location" : "https://rawgit.com/elsiklab/ga4ghviewer/master",
           "name" : "GA4GHViewer"
       }
   ],
