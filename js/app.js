@@ -8,11 +8,14 @@ var app = angular.module('plugD', [
     'angularUtils.directives.dirPagination'
 ]);
 
+var ghString = "https://github.com/";
+var bbString = "https://bitbucket.org/";
+
 app.controller("PluginController",['$scope', '$location', function($scope,$location){
     $scope.filter = {gmod:"", term:"", perPage:5};
     $scope.currentPage = 1;
 
-    // URI control querry string
+    // URI control query string
     var search = $location.search();
     var page = search.page || $scope.currentPage;
     var per = search.perPage || $scope.filter.perPage;
@@ -22,7 +25,15 @@ app.controller("PluginController",['$scope', '$location', function($scope,$locat
     $scope.sortKey = "name";
     $scope.order ='+';
     $scope.plugins = plugin_data.map(function(elem){
-        elem.id = elem.name.replace(/ /g, '-').replace(/[^A-Za-z0-9_-]/g, '')
+        elem.id = elem.name.replace(/ /g, '-').replace(/[^A-Za-z0-9_-]/g, '');
+        if(elem.location.indexOf(ghString)>=0){
+            elem.abbrev = elem.location.substring(ghString.length) ;
+            elem.type = "github";
+        }
+        if(elem.location.indexOf(bbString)>=0){
+            elem.abbrev = elem.location.substring(bbString.length) ;
+            elem.type = "bitbucket";
+        }
         return elem;
     });
 
@@ -30,7 +41,7 @@ app.controller("PluginController",['$scope', '$location', function($scope,$locat
     $scope.pageChangeHandler = function(newPage){
         $scope.currentPage = newPage;
         $location.search({page:newPage,perPage:$scope.filter.perPage});
-    }
+    };
 
     // Watch querry string for changes and update
     $scope.$watch(function(){
@@ -38,7 +49,7 @@ app.controller("PluginController",['$scope', '$location', function($scope,$locat
     }, function(value){
        $scope.filter.perPage = value.perPage;
        $scope.currentPage = value.page;
-    })
+    });
 
 
 }]);
