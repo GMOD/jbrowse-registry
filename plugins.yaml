@@ -41,6 +41,7 @@
   location: https://github.com/cmdcolin/gwasviewer
   name: gwasviewer
   image: gwasviewer.png
+  demo: "gwasviewer"
 - author: Colin Diesh
   description: |
     A JBrowse plugin that fetches info from MyVariant.info and MyGene.info and
