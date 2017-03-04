@@ -207,3 +207,11 @@
   location: https://github.com/bhofmei/jbplugin-screenshot
   name: Screenshots Plugin
   license: MIT
+- author: Eric Rasche
+  description: |
+    JBrowse plugin to render gff3 formatted Blast results nicely and provide useful help menus
+  gmodProject: JBrowse
+  location: https://github.com/TAMU-CPT/blastview
+  name: BlastView
+  license: AGPL-3.0
+  demo: "blastview&tracks=DNA,Feature,Blast&loc=ctgA:5235..6268"
