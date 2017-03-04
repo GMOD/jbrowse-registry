@@ -215,3 +215,4 @@
   name: BlastView
   license: AGPL-3.0
   demo: "blastview&tracks=DNA,Feature,Blast&loc=ctgA:5235..6268"
+  image: blastviewer.png
