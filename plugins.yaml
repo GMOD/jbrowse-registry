@@ -216,3 +216,17 @@
   license: AGPL-3.0
   demo: "blastview&tracks=DNA,Feature,Blast&loc=ctgA:5235..6268"
   image: blastviewer.png
+- author: Matthias Monfort, Charles Girardot
+  description: |
+    JBrowse plugin for dynamic visualization by automatic selection of
+    informative tracks from hundreds of genomic data sets. Dynamix takes
+    advantage of a priori knowledge to automatically display data tracks
+    with signal within a genomic region of interest. Dynamix also
+    introduces a new carousel view that optimises screen utilisation by
+    enabling users to independently scroll through groups of tracks.
+  gmodProject: JBrowse
+  location: https://git.embl.de/monfort/dynamix/
+  name: Dynamix
+  demo: "http://furlonglab.embl.de/DynamixDemo"
+  image: dynamix.png
+  license: MIT
