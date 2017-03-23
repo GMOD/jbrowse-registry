@@ -230,3 +230,10 @@
   demo: "http://furlonglab.embl.de/DynamixDemo"
   image: dynamix.png
   license: MIT
+- author: Colin Diesh
+  description:  |
+      A JBrowse plugin to view multiple whole-genome alignment data
+  name: mafviewer
+  image: mafviewer.png
+  gmodProject: JBrowse
+  location: https://github.com/cmdcolin/mafviewer
