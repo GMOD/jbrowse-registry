@@ -55,3 +55,4 @@ jspm_packages
 js/plugins.json
 build/
 release
+.DS_Store
