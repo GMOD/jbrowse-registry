@@ -10,13 +10,6 @@
     {
       "type": "GWASViewer/View/Track/VariantPlotter",
       "urlTemplate": "tracks/GIANT_BMI_GWAS/{refseq}/trackData.json",
-      "label": "GIANT_BMI_GWAS (ensembl r2)",
-      "storeClass": "JBrowse/Store/SeqFeature/NCList",
-      "useEnsemblR2": true
-    },
-    {
-      "type": "GWASViewer/View/Track/VariantPlotter",
-      "urlTemplate": "tracks/GIANT_BMI_GWAS/{refseq}/trackData.json",
       "label": "GIANT_BMI_GWAS (myvariantinfo)",
       "storeClass": "JBrowse/Store/SeqFeature/NCList",
       "useMyVariantInfo": true
