@@ -237,3 +237,10 @@
   image: mafviewer.png
   gmodProject: JBrowse
   location: https://github.com/cmdcolin/mafviewer
+- author: Andrew Wilkey
+  description:  |
+      JBrowse plugin allowing users to manage a persistent list of bookmarks kept in localstorage
+  name: Bookmarks
+  image: bookmarks.png
+  gmodProject: JBrowse
+  location: https://github.com/awilkey/bookmarks-jbrowse/
