@@ -5,7 +5,7 @@
             <span id="plug-addon" class="input-group-addon glyphicon glyphicon-search" aria-hidden="true"></span>
         </div>
         <div class="filter-group">
-       	    <form class="form-inline filter-form" role="form">
+               <form class="form-inline filter-form" role="form">
                 <div class="form-group">
                     <label>Project:</label>
                     <select name="projectSelect" required="required" class="form-control" ng-model="filter.gmod">
@@ -57,8 +57,8 @@
                 </div>
              </div>
             <div>
-                <div class="row" ng-if="!plugin.image">
-                    <div class="col-xs-12">
+                <div class="row">
+                    <div class="col-xs-{{ plugin.image ? 9 : 12 }}">
                         <blockquote>{{plugin.description}}</blockquote>
                         <div class="list-unstyled">
                             <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
@@ -76,27 +76,7 @@
                             <a ng-if="plugin.abbrev"><a href="{{plugin.location}}"><i class="fa fa-lg fa-{{plugin.type}}" aria-hidden="true"></i> {{plugin.abbrev}}</a></span>
                         </div>
                     </div>
-                </div>
-                <div class="row" ng-if="plugin.image">
-                    <div class="col-xs-9">
-                        <blockquote>{{plugin.description}}</blockquote>
-                        <div class="list-unstyled">
-                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                            <span>{{plugin.author}}</span>
-                            <span>&nbsp;</span>
-                            <span ng-if="plugin.license" class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
-                            <span ng-if="plugin.license" ng-bind-html="plugin.license | spdx_formatter"></span>
-                            <span>&nbsp;</span>
-                            <span ng-if="plugin.demo" class="glyphicon glyphicon-link" aria-hidden="true"></span>
-                            <span ng-if="plugin.demo">
-                                <a href="{{plugin.demo.slice(0,4)=='http' ? plugin.demo : 'demos/JBrowse-1.12.1/?data=../'+ plugin.demo }}">
-                                    Live Demo
-                                </a>
-                            </span>
-                            <a ng-if="plugin.abbrev"><a href="{{plugin.location}}"><i class="fa fa-lg fa-{{plugin.type}}" aria-hidden="true"></i> {{plugin.abbrev}}</a></span>
-                        </div>
-                    </div>
-                    <div class="col-xs-3">
+                    <div class="col-xs-3" ng-if="plugin.image">
                         <img ng-src="img/{{ plugin.image }}" style="width:100%">
                     </div>
                 </div>
@@ -112,7 +92,7 @@
        pagination-id="plugins"
        max-size="10"
        direction-links="true"
-	   on-page-change="pageChangeHandler(newPageNumber)"
+       on-page-change="pageChangeHandler(newPageNumber)"
        boundary-links="true" autohide>
     </dir-pagination-controls>
 </div>
