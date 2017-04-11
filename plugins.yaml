@@ -244,3 +244,4 @@
   image: bookmarks.png
   gmodProject: JBrowse
   location: https://github.com/awilkey/bookmarks-jbrowse/
+  license: MIT
