@@ -167,6 +167,8 @@
   license: MIT
   location: https://github.com/Arabidopsis-Information-Portal/ComboTrackSelector
   name: ComboTrackSelector
+  demo: "combotrackselector&loc=Chr1:25097503..25120860&tracks=DNA,Genes,1005,159,1013,285,1201"
+  image: combotrackselector.png
 - author: Keiran Raine
   description: |
     JBrowse plugin to display multiple BigWig tracks as a stacked proportion of count with
