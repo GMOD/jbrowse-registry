@@ -253,3 +253,4 @@
   gmodProject: JBrowse
   location: https://github.com/erasche/jbrowse-dark-theme/
   license: GPL-3.0
+  demo: "darkflat&tracks=DNA,Feature,Blast&loc=ctgA:5235..6268"
