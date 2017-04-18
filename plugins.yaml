@@ -254,3 +254,12 @@
   location: https://github.com/erasche/jbrowse-dark-theme/
   license: GPL-3.0
   demo: "darkflat&tracks=DNA,ExampleFeatures&loc=ctgA:1..6268"
+- author: Eric Rasche
+  description:  |
+      Afra/Minimalist theme for JBrowse
+  name: Minimalist Theme
+  image: minimalist.png
+  gmodProject: JBrowse
+  location: https://github.com/erasche/jbrowse-minimalist-theme/
+  license: GPL-3.0
+  demo: "minimalist&tracks=DNA,ExampleFeatures&loc=ctgA:1..6268"
