@@ -245,3 +245,12 @@
   gmodProject: JBrowse
   location: https://github.com/awilkey/bookmarks-jbrowse/
   license: MIT
+- author: Eric Rasche
+  description:  |
+      Dark/Flat theme for JBrowse
+  name: Dark/Flat Theme
+  image: darkflat.png
+  gmodProject: JBrowse
+  location: https://github.com/erasche/jbrowse-dark-theme/
+  license: GPL-3.0
+  demo: "darkflat&tracks=DNA,ExampleFeatures&loc=ctgA:1..6268"
