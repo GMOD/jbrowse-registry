@@ -274,14 +274,6 @@
   name: ThemeComponent-Colors-BlackWhite-BlueGreen
   gmodProject: JBrowse
 - author: JBrowse Themes
-  demo: ThemeComponent-ComboTrackSelectorGalaxyLogo&tracks=DNA,ExampleFeatures&loc=ctgA:1..6268
-  description: Load the Galaxy logo after a modified, picture-less combo track selector.
-  image: ThemeComponent-ComboTrackSelectorGalaxyLogo.png
-  license: GPL-3.0
-  location: https://github.com/jbrowse-themes/ThemeComponent-ComboTrackSelectorGalaxyLogo
-  name: ThemeComponent-ComboTrackSelectorGalaxyLogo
-  gmodProject: JBrowse
-- author: JBrowse Themes
   demo: ThemeComponent-DisableGrid&tracks=DNA,ExampleFeatures&loc=ctgA:1..6268
   description: A JBrowse 'Theme Component' which disables the grid
   image: ThemeComponent-DisableGrid.png
