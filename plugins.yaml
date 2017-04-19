@@ -270,6 +270,7 @@
   license: GPL-3.0
   location: https://github.com/jbrowse-themes/ThemeComponent-Colors-BlackWhite-BlueGreen
   name: ThemeComponent-Colors-BlackWhite-BlueGreen
+  gmodProject: JBrowse
 - author: JBrowse Themes
   demo: ThemeComponent-ComboTrackSelectorGalaxyLogo&tracks=DNA,ExampleFeatures&loc=ctgA:1..6268
   description: Load the Galaxy logo after a modified, picture-less combo track selector.
@@ -277,12 +278,14 @@
   license: GPL-3.0
   location: https://github.com/jbrowse-themes/ThemeComponent-ComboTrackSelectorGalaxyLogo
   name: ThemeComponent-ComboTrackSelectorGalaxyLogo
+  gmodProject: JBrowse
 - author: JBrowse Themes
   demo: ThemeComponent-DisableGrid&tracks=DNA,ExampleFeatures&loc=ctgA:1..6268
   description: A JBrowse 'Theme Component' which disables the grid
   image: ThemeComponent-DisableGrid.png
   license: GPL-3.0
   location: https://github.com/jbrowse-themes/ThemeComponent-DisableGrid
+  gmodProject: JBrowse
   name: ThemeComponent-DisableGrid
 - author: JBrowse Themes
   demo: ThemeComponent-Flat&tracks=DNA,ExampleFeatures&loc=ctgA:1..6268
@@ -291,6 +294,7 @@
   license: GPL-3.0
   location: https://github.com/jbrowse-themes/ThemeComponent-Flat
   name: ThemeComponent-Flat
+  gmodProject: JBrowse
 - author: JBrowse Themes
   demo: ThemeComponent-RearrangedRulers&tracks=DNA,ExampleFeatures&loc=ctgA:1..6268
   description: Rearranges the rulers to be next to each other, and removes the "zoomed
@@ -299,6 +303,7 @@
   license: GPL-3.0
   location: https://github.com/jbrowse-themes/ThemeComponent-RearrangedRulers
   name: ThemeComponent-RearrangedRulers
+  gmodProject: JBrowse
 - author: JBrowse Themes
   demo: ThemeComponent-RightAlignedControls&tracks=DNA,ExampleFeatures&loc=ctgA:1..6268
   description: Align the zoom controls to the right.
@@ -306,3 +311,4 @@
   license: GPL-3.0
   location: https://github.com/jbrowse-themes/ThemeComponent-RightAlignedControls
   name: ThemeComponent-RightAlignedControls
+  gmodProject: JBrowse

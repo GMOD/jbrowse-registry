@@ -26,6 +26,7 @@ for repo in org.get_repos():
         'license': 'GPL-3.0', # hard coded for now
         'location': repo.html_url,
         'demo': "%s&tracks=DNA,ExampleFeatures&loc=ctgA:1..6268" % repo.name,
+        'gmodProject': 'JBrowse',
     })
 
     subprocess.check_call([
