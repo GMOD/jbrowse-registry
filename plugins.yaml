@@ -263,3 +263,46 @@
   location: https://github.com/erasche/jbrowse-minimalist-theme/
   license: GPL-3.0
   demo: "minimalist&tracks=DNA,ExampleFeatures&loc=ctgA:1..6268"
+- author: JBrowse Themes
+  demo: ThemeComponent-Colors-BlackWhite-BlueGreen&tracks=DNA,ExampleFeatures&loc=ctgA:1..6268
+  description: A pleasant minimalist black, white and fresh colour scheme
+  image: ThemeComponent-Colors-BlackWhite-BlueGreen.png
+  license: GPL-3.0
+  location: https://github.com/jbrowse-themes/ThemeComponent-Colors-BlackWhite-BlueGreen
+  name: ThemeComponent-Colors-BlackWhite-BlueGreen
+- author: JBrowse Themes
+  demo: ThemeComponent-ComboTrackSelectorGalaxyLogo&tracks=DNA,ExampleFeatures&loc=ctgA:1..6268
+  description: Load the Galaxy logo after a modified, picture-less combo track selector.
+  image: ThemeComponent-ComboTrackSelectorGalaxyLogo.png
+  license: GPL-3.0
+  location: https://github.com/jbrowse-themes/ThemeComponent-ComboTrackSelectorGalaxyLogo
+  name: ThemeComponent-ComboTrackSelectorGalaxyLogo
+- author: JBrowse Themes
+  demo: ThemeComponent-DisableGrid&tracks=DNA,ExampleFeatures&loc=ctgA:1..6268
+  description: A JBrowse 'Theme Component' which disables the grid
+  image: ThemeComponent-DisableGrid.png
+  license: GPL-3.0
+  location: https://github.com/jbrowse-themes/ThemeComponent-DisableGrid
+  name: ThemeComponent-DisableGrid
+- author: JBrowse Themes
+  demo: ThemeComponent-Flat&tracks=DNA,ExampleFeatures&loc=ctgA:1..6268
+  description: Flatten many curved surfaces
+  image: ThemeComponent-Flat.png
+  license: GPL-3.0
+  location: https://github.com/jbrowse-themes/ThemeComponent-Flat
+  name: ThemeComponent-Flat
+- author: JBrowse Themes
+  demo: ThemeComponent-RearrangedRulers&tracks=DNA,ExampleFeatures&loc=ctgA:1..6268
+  description: Rearranges the rulers to be next to each other, and removes the "zoomed
+    region" blue bar.
+  image: ThemeComponent-RearrangedRulers.png
+  license: GPL-3.0
+  location: https://github.com/jbrowse-themes/ThemeComponent-RearrangedRulers
+  name: ThemeComponent-RearrangedRulers
+- author: JBrowse Themes
+  demo: ThemeComponent-RightAlignedControls&tracks=DNA,ExampleFeatures&loc=ctgA:1..6268
+  description: Align the zoom controls to the right.
+  image: ThemeComponent-RightAlignedControls.png
+  license: GPL-3.0
+  location: https://github.com/jbrowse-themes/ThemeComponent-RightAlignedControls
+  name: ThemeComponent-RightAlignedControls
