@@ -1,5 +1,7 @@
 ## Changelog
 
+- 0.5.1
+       - Update deps
 - 0.5.0
        - Allow anchoring on page number
        - Fix bug with demos related to underscores in filenames
