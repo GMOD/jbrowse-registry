@@ -14,12 +14,10 @@ module.exports = {
 			{test: /\.css$/, loader: "style!css"},
 			{test: /node_modules.*\.json$/, loader: "json-loader"},
 			{test: /\.html$/, loader: "html"},
-			{test: /\.scss$/, loader: ExtractTextPlugin.extract("css!sass")},
+			{test: /\.scss$/, loader: ExtractTextPlugin.extract(['css-loader', 'sass-loader'])},
 		],
 	},
 	plugins: [
-		new ExtractTextPlugin("[name].css", {
-			allChunks: true,
-		}),
+		new ExtractTextPlugin({ filename: "[name].css", allChunks: true }),
 	],
 };
