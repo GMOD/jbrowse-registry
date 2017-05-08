@@ -13,6 +13,7 @@ var bbString = "https://bitbucket.org/";
 
 app.controller("PluginController",['$scope', '$location', function($scope,$location){
     $scope.currentPage = 1;
+    $scope.filter = {perPage: 5};
 
     $scope.getCurrentFilter = function(){
         var search = $location.search();
@@ -30,7 +31,7 @@ app.controller("PluginController",['$scope', '$location', function($scope,$locat
         $location.search({
             gmod: filter.gmod,
             page: $scope.currentPage,
-            perPage: filter.perPage,
+            perPage: filter.perPage || 5,
             term: filter.term,
             sortKey: filter.sortKey,
             order: filter.order,
@@ -38,7 +39,6 @@ app.controller("PluginController",['$scope', '$location', function($scope,$locat
     }
 
     $scope.filter = $scope.getCurrentFilter();
-    console.log($scope.filter);
 
     $scope.plugins = plugin_data.map(function(elem){
         elem.id = elem.name.replace(/ /g, '-').replace(/[^A-Za-z0-9_-]/g, '');
@@ -72,10 +72,7 @@ app.controller("PluginController",['$scope', '$location', function($scope,$locat
     $scope.$watch(function(scope){
         return scope.filter;
     }, function(newValue, oldValue){
-        if(!angular.equals(newValue, oldValue)){
-            $scope.updateLocation(newValue);
-            return;
-        }
+        $scope.updateLocation(newValue);
     }, true);
 
 
