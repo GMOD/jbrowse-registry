@@ -12,18 +12,34 @@ var ghString = "https://github.com/";
 var bbString = "https://bitbucket.org/";
 
 app.controller("PluginController",['$scope', '$location', function($scope,$location){
-    $scope.filter = {gmod:"", term:"", perPage:5};
     $scope.currentPage = 1;
 
-    // URI control query string
-    var search = $location.search();
-    var page = search.page || $scope.currentPage;
-    var per = search.perPage || $scope.filter.perPage;
-    $location.search({page:page, perPage:per});
+    $scope.getCurrentFilter = function(){
+        var search = $location.search();
+        return {
+            gmod: search.gmod || "",
+            term: search.term || "",
+            page: $scope.currentPage || 1,
+            perPage: search.perPage || 5,
+            sortKey: search.sortKey || "name",
+            order: search.order || "+",
+        }
+    }
 
+    $scope.updateLocation = function(filter){
+        $location.search({
+            gmod: filter.gmod,
+            page: $scope.currentPage,
+            perPage: filter.perPage,
+            term: filter.term,
+            sortKey: filter.sortKey,
+            order: filter.order,
+        });
+    }
 
-    $scope.sortKey = "name";
-    $scope.order ='+';
+    $scope.filter = $scope.getCurrentFilter();
+    console.log($scope.filter);
+
     $scope.plugins = plugin_data.map(function(elem){
         elem.id = elem.name.replace(/ /g, '-').replace(/[^A-Za-z0-9_-]/g, '');
         if(elem.location.indexOf(ghString)>=0){
@@ -37,19 +53,30 @@ app.controller("PluginController",['$scope', '$location', function($scope,$locat
         return elem;
     });
 
-    // pagination function on page change
+    //// pagination function on page change
     $scope.pageChangeHandler = function(newPage){
         $scope.currentPage = newPage;
-        $location.search({page:newPage,perPage:$scope.filter.perPage});
+        $scope.updateLocation($scope.filter);
     };
 
-    // Watch querry string for changes and update
+    // Watch query string for sync to $scope.filter
     $scope.$watch(function(){
         return $location.search();
     }, function(value){
-       $scope.filter.perPage = value.perPage;
-       $scope.currentPage = value.page;
+        // No need to updateLocation because that was the source of the
+        // event.
+        $scope.filter = value;
     });
+
+    // Watch the $scope.filter for changes and sync to query string
+    $scope.$watch(function(scope){
+        return scope.filter;
+    }, function(newValue, oldValue){
+        if(!angular.equals(newValue, oldValue)){
+            $scope.updateLocation(newValue);
+            return;
+        }
+    }, true);
 
 
 }]);

@@ -18,7 +18,7 @@
                 </div>
                 <div class="form-group">
                     <label>Sort By:</label>
-                    <select name="projectSelect" required="required" class="form-control" ng-model="sortKey">
+                    <select name="projectSelect" required="required" class="form-control" ng-model="filter.sortKey">
                         <option value="name">Name</option>
                         <option value="author">Author</option>
                         <option value="added">Date added</option>
@@ -27,7 +27,7 @@
                 </div>
                 <div class="form-group">
                     <label>Order:</label>
-                    <select name="orderSelect" required="required" class="form-control" ng-model="order">
+                    <select name="orderSelect" required="required" class="form-control" ng-model="filter.order">
                         <option value= '+' selected>Ascending</option>
                         <option value= '-'>Descending</option>
                     </select>
