@@ -7,6 +7,7 @@
   location: https://github.com/cmdcolin/multibigwig
   name: multibigwig
   license: MIT
+  image: multibigwig.png
 - author: Colin Diesh
   description: |
     A JBrowse plugin for plotting GC Content and GC Skew. The plugin consists
@@ -26,6 +27,7 @@
   gmodProject: JBrowse
   location: https://github.com/cmdcolin/jbrowse_elasticsearch
   name: jbrowse_elasticsearch
+  image: jbrowse_elasticsearch.png
 - author: Colin Diesh
   description: |
    A JBrowse plugin to load BED tabix, VCF tabix, or BAM as a blank track if
@@ -58,6 +60,7 @@
   location: https://github.com/cmdcolin/ga4ghviewer
   name: ga4ghviewer
   demo: "ga4ghviewer&tracks=DNA,1000genomes"
+  image: ga4ghviewer.png
 - author: Colin Diesh
   description: |
     A JBrowse plugin for re-mapping coordinates "on the fly".
@@ -65,6 +68,7 @@
   location: https://github.com/cmdcolin/projectionplugin
   name: projectionplugin
   license: MIT
+  image: projectionplugin.png
 - author: Andrew Wilkey
   description: |
    A JBrowse plugin to allow the browser to enter fullscreen mode.
@@ -158,6 +162,7 @@
   license: MIT
   location: https://github.com/Arabidopsis-Information-Portal/SeqLighter
   name: SeqLighter
+  image: seqlighter.png
 - author: Maria Kim, Vivek Krishnakumar
   description: |
     ComboTrackSelector is a plugin to allow the co-existence of the
@@ -177,18 +182,21 @@
   license: AGPL-3.0
   location: https://github.com/cancerit/proportionalmultibw
   name: ProportionalMultiBw
+  image: proportionalmultibw.png
 - author: Colin Diesh
   description: |
     A JBrowse plugin for coloring BAM reads according to quality scores
   gmodProject: JBrowse
   location: https://github.com/cmdcolin/qualityglyphs
   name: qualityglyphs
+  image: qualityglyphs.png
 - author: Colin Diesh
   description: |
     A JBrowse plugin with a custom variant track for multi-VCF files and optionally plotting LD scores
   gmodProject: JBrowse
   location: https://github.com/cmdcolin/multivariantviewer
   name: multivariantviewer
+  image: multivariant.png
 - author: Colin Diesh
   description: |
     A JBrowse plugin to parse AGP files and display them
@@ -202,6 +210,7 @@
   license: ISC
   location: https://github.com/cmdcolin/gccoverage
   name: gccoverage
+  image: gccoverage.png
 - author: Brigitte Hofmeister
   description: |
     JBrowse plugin to makes configurable screenshots easy using PhantomJS Cloud
