@@ -306,3 +306,15 @@
   location: https://github.com/jbrowse-themes/ThemeComponent-RightAlignedControls
   name: ThemeComponent-RightAlignedControls
   gmodProject: JBrowse
+- author: Eric Rasche
+  name: Site-wide Notices
+  demo: sitewide
+  description: |
+      This allows you to proactively inform users about upcoming maintenance
+      events. It displays a highly visible button and a popup with further
+      information loaded from a JSON file, allowing your users to plan around
+      downtimes.
+  image: sitewide.png
+  license: AGPL-3.0
+  location: https://github.com/TAMU-CPT/SitewideNotices/
+  gmodProject: JBrowse

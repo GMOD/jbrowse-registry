@@ -1,0 +1,22 @@
+[
+    {
+        "title": "2017-05-22 Emergency Maintenance",
+        "message": "Expected site-wide downtime due to ongoing maintenance. Please see our <a href='https://example.com/'>status page</a> for more information",
+        "class": "severity_2 ongoing"
+    },
+    {
+        "title": "2017-04-22 Current maintenance event",
+        "message": "Some minor impact maintenance, site may be down.",
+        "class": "severity_1 ongoing"
+    },
+    {
+        "title": "2017-03-22 Old maintenance event",
+        "message": "Some quick maintenance today, no expected impact",
+        "class": "severity_0"
+    },
+    {
+        "title": "2017-01-22 Ancient maintenance event",
+        "message": "Completely resolved",
+        "class": "severity_0 resolved"
+    }
+]

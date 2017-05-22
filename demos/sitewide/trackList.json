@@ -1,0 +1,26 @@
+{
+	"formatVersion" : 1,
+	"plugins" : [
+		{
+			"location" : "https://cdn.rawgit.com/TAMU-CPT/SitewideNotices/c7304f6435692f94541a1fbe6e56fa73044f218e",
+			"name": "SitewideNotices",
+			"notice_url": "https://gmod.github.io/jbrowse-registry/demos/sitewide/notices.json",
+			"label": "Important Site Notices!",
+			"background_color": "pink",
+			"popup_title": "Super Important Notices"
+		}
+	],
+	"tracks" : [
+		{
+			"disablePreflight": true,
+			"label" : "DNA",
+			"type" : "SequenceTrack",
+			"seqType" : "dna",
+			"key" : "Reference sequence",
+			"urlTemplate" : "../seq/{refseq}/",
+			"chunkSize" : 20000,
+			"storeClass" : "JBrowse/Store/Sequence/StaticChunked",
+			"category" : "Reference sequence"
+		},
+	]
+}
