@@ -327,3 +327,9 @@
   license: AGPL-3.0
   location: https://github.com/TAMU-CPT/SitewideNotices/
   gmodProject: JBrowse
+- author: Colin Diesh
+  description: |
+    JBrowse plugin to make a list of tracks from a base track config and list of file URLs
+  gmodProject: JBrowse
+  location: https://github.com/cmdcolin/manytracks
+  name: manytracks
