@@ -332,4 +332,5 @@
     JBrowse plugin to make a list of tracks from a base track config and list of file URLs
   gmodProject: JBrowse
   location: https://github.com/cmdcolin/manytracks
+  license: ISC
   name: manytracks
