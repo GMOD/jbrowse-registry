@@ -83,7 +83,7 @@
    search, track data search, track export, search export, create new
    experiments based on searches, and more.
   gmodProject: JBrowse
-  location: https://github.com/LyonsLab/coge/tree/master/web/js/jbrowse/plugins/CoGe
+  location: https://github.com/LyonsLab/CoGe_plugin
   name: CoGe JBrowse plugin
   license: BSD-2-Clause
 - author: Travis Saari
