@@ -334,3 +334,10 @@
   location: https://github.com/cmdcolin/manytracks
   license: ISC
   name: manytracks
+- author: BioNano Genomics
+  description: |
+      JBrowse plugin to support BioNano Genomics files
+  gmodProject: JBrowse
+  location: https://github.com/bionanogenomics/JBrowsePlugin/
+  license: MIT
+  name: BioNanoGenomics
