@@ -13,10 +13,15 @@ angular
 
         $scope.page = 1;
         $scope.plugins = plugin_data;
+        $scope.sortKey = 'name';
         $scope.numPerPage = 10;
         $scope.version = app_data.version;
         $scope.url = app_data.repository.url
-
+        $scope.pageChanged = function() {
+          var startPos = ($scope.page - 1) * 3;
+          //$scope.displayItems = $scope.totalItems.slice(startPos, startPos + 3);
+          console.log($scope.page);
+        };
         $scope.plugins = plugin_data.map(function(elem){
             elem.id = elem.name.replace(/ /g, '-').replace(/[^A-Za-z0-9_-]/g, '');
             if(elem.location.indexOf("https://github.com/")>=0){

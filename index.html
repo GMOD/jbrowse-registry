@@ -45,8 +45,8 @@
                            <form class="form-inline filter-form" role="form">
                                 <div class="form-group">
                                     <label>Sort By:</label>
-                                    <select name="projectSelect" required="required" class="form-control" ng-model="sortKey" ng-model-options="{ getterSetter: true }">
-                                        <option value="name">Name</option>
+                                    <select class="form-control" ng-model="sortKey" ng-model-options="{ getterSetter: true }">
+                                        <option value="name" selected>Name</option>
                                         <option value="author">Author</option>
                                         <option value="added">Date added</option>
                                         <option value="license">License</option>
@@ -56,9 +56,8 @@
                         </div>
                     </div>
                 </nav>
-
                 <div class="plugin-list">
-                    <div ng-repeat="plugin in plugins | filter:searchTerm | orderBy:sortKey | limitTo:10:10*(page-1)" class="list-group-item">
+                    <div ng-repeat="plugin in filterData = (plugins | filter : {name: searchTerm}) | orderBy:sortKey | limitTo:10:10*(page-1)" class="list-group-item">
                          <div class="row plugin-title">
                             <div class="col-xs-9 plugin-name">
                                 <a href="{{plugin.location}}">
@@ -98,19 +97,11 @@
                         </div>
                     </div>
                 </div>
-                <div>
-                    <ul uib-pagination total-items="plugins.length" ng-model="currentPage" ng-change="pageChanged()" items-per-page=10></ul>
-                </div>
+   
+                <ul uib-pagination class="pagination-sm pagination" total-items="filterData.length" ng-model="page"
+                    ng-change="pageChanged()" previous-text="&lsaquo;" next-text="&rsaquo;" items-per-page=10></ul>
+    
             </section>
-        </div>
-
-        <div class="contact">
-            <p>
-                This project is licensed under the BSD-2-Clause license,
-                and is avilable on <a href="https://github.com/GMOD/jbrowse-registry">GitHub</a>.
-                Portions of this project was supported by the National
-                Science Foundation under Grant Number 1565146
-            </p>
         </div>
     </body>
 </html>
