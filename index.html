@@ -1,45 +1,122 @@
 <!doctype html>
-<html lang="en" ng-app='plugD'>
+<html lang="en">
     <head>
-        <title>Unofficial GMOD Plugin List</title>
+        <title>GMOD Plugin List</title>
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="build/main.css" />
 
         <link href='https://fonts.googleapis.com/css?family=Roboto:500' rel='stylesheet' type='text/css'>
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
         <script src="build/app.js"></script>
 
     </head>
-            <header>
-                <div class="container">
-                    <div class="intro-text">
-                       <div class="intro-heading">The GMOD Plugin Directory</div>
-					   <version-info></version-info>
+    <body ng-app="gmodPlugins" ng-controller="PluginController">
+        <base href="/">
+        <header>
+            <div class="container">
+                <div class="intro-text">
+                   <div class="intro-heading">The GMOD Plugin Directory</div>
+                   <a style="color:white" href="{{ url }}">Version {{ version }}</a>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <section id="app">
+                <ul class="nav nav-pills">
+                    <li class="active">
+                        <a>Plugins</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/GMOD/jbrowse-registry#registering-a-plugin" target="_blank">Register a Plugin</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/GMOD/jbrowse-registry/pulls?utf8=%E2%9C%93&q=is%3Apr%20label%3Anew-plugin%20" target="_blank">Pending plugins</a>
+                    </li>
+                </ul>
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Filter plugins..." ng-change="termChanged()"  ng-model="searchTerm" aria-describedby="plug-addon">
+                            <span id="plug-addon" class="input-group-addon glyphicon glyphicon-search" aria-hidden="true"></span>
+                        </div>
+                        <div class="filter-group">
+                           <form class="form-inline filter-form" role="form">
+                                <div class="form-group">
+                                    <label>Sort By:</label>
+                                    <select class="form-control" ng-model="sortKey">
+                                        <option value="name" selected>Name</option>
+                                        <option value="author">Author</option>
+                                        <option value="added">Date added</option>
+                                        <option value="license">License</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">		
+                                    <label>Order:</label>		
+                                    <select class="form-control" ng-model="order">		
+                                        <option value= '+' selected>Ascending</option>		
+                                        <option value= '-'>Descending</option>		
+                                    </select>		
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+                <div class="plugin-list">
+                    <div ng-repeat="plugin in filterData = (plugins | filter : {name: searchTerm}) | orderBy:order+sortKey | limitTo:10:10*(page-1)" class="list-group-item">
+                         <div class="row plugin-title">
+                            <div class="col-xs-9 plugin-name">
+                                <a href="{{plugin.location}}">
+                                {{ plugin.name }}
+                                </a>
+                            </div>
+                            <div class="col-xs-3 plugin-project">
+                                {{ plugin.gmodProject }}
+                            </div>
+                         </div>
+                        <div>
+                            <div class="row">
+                                <div class="col-xs-{{ plugin.image ? 9 : 12 }}">
+                                    <blockquote>{{plugin.description}}</blockquote>
+                                    <div class="list-unstyled">
+                                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                                        <span>{{plugin.author}}</span>
+                                        <span>&nbsp;</span>
+                                        <span ng-if="plugin.license" class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                                        <span ng-if="plugin.license" ng-bind-html="plugin.license | spdx_formatter"></span>
+                                        <span>&nbsp;</span>
+                                        <span ng-if="plugin.demo" class="glyphicon glyphicon-link" aria-hidden="true"></span>
+                                        <span ng-if="plugin.demo">
+                                            <a href="{{plugin.demo.slice(0,4)=='http' ? plugin.demo : 'demos/JBrowse-1.12.1/?data=../'+ plugin.demo }}">
+                                                Live Demo
+                                            </a>
+                                        </span>
+                                        <a ng-if="plugin.abbrev"><a href="{{plugin.location}}"><i class="fa fa-lg fa-{{plugin.type}}" aria-hidden="true"></i> {{plugin.abbrev}}</a></span>
+                                    </div>
+                                </div>
+                                <div class="col-xs-3" ng-if="plugin.image">
+                                    <a href="img/{{ plugin.image }}" target="_blank">
+                                        <img ng-src="img/{{ plugin.image }}" style="width:100%">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </header>
-            <div class="container">
-                <section id="app">
-                    <ul class="nav nav-pills">
-                        <li class="active">
-                            <a>Plugins</a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/GMOD/jbrowse-registry#registering-a-plugin" target="_blank">Register a Plugin</a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/GMOD/jbrowse-registry/pulls" target="_blank">Pending plugins</a>
-                        </li>
-                    </ul>
-                    <plugin-list></plugin-list>
-                </section>
-            </div>
-
-            <div class="contact">
-                <p>
-                    This project is licensed under the BSD-2-Clause license,
-                    and is avilable on <a href="https://github.com/GMOD/jbrowse-registry">GitHub</a>
-                </p>
-            </div>
+   
+                <ul uib-pagination class="pagination-sm pagination" total-items="filterData.length" ng-model="page"
+                    ng-change="pageChanged()" previous-text="&lsaquo;" next-text="&rsaquo;" items-per-page=10></ul>
+    
+                <div class="contact">
+                    <p>
+                        This project is licensed under the BSD-2-Clause license,
+                        and is avilable on <a href="https://github.com/GMOD/jbrowse-registry">GitHub</a>.
+                        Portions of this project was supported by the National
+                        Science Foundation under Grant Number 1565146
+                    </p>
+                </div>
+            </section>
+        </div>
+    </body>
 </html>

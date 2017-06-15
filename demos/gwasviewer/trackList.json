@@ -1,0 +1,25 @@
+{
+  "plugins" : [
+      {
+          "location" : "https://rawgit.com/elsiklab/gwasviewer/master",
+          "name" : "GWASViewer"
+      }
+  ],
+  "formatVersion": 1,
+  "tracks": [
+    {
+      "type": "GWASViewer/View/Track/VariantPlotter",
+      "urlTemplate": "tracks/GIANT_BMI_GWAS/{refseq}/trackData.json",
+      "label": "GIANT_BMI_GWAS (myvariantinfo)",
+      "storeClass": "JBrowse/Store/SeqFeature/NCList",
+      "useMyVariantInfo": true
+    },
+    {
+      "type": "GWASViewer/View/Track/VariantPlotter",
+      "urlTemplate": "tracks/GIANT_BMI_GWAS/{refseq}/trackData.json",
+      "label": "GIANT_BMI_GWAS (normal view details popup)",
+      "storeClass": "JBrowse/Store/SeqFeature/NCList"
+    }
+  ],
+  "classicMenu": true
+}

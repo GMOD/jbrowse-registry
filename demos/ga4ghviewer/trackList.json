@@ -1,24 +1,16 @@
 {
    "tracks" : [
       {
-         "type": "CanvasFeatures",
-         "urlTemplate": "http://1kgenomes.ga4gh.org",
-         "storeClass": "GA4GHViewer/Store/SeqFeature/1000genomes",
-         "label": "GA4GH 1kg (phase3)",
-         "callSetIds":[]
-      },
-      {
-         "type": "CanvasFeatures",
-         "urlTemplate": "http://1kgenomes.ga4gh.org",
-         "storeClass": "GA4GHViewer/Store/SeqFeature/1000genomes",
-         "key": "GA4GH 1kg features",
-         "label": "1000genomes",
-         "functional": true,
-         "callSetIds":[]
+         "storeClass" : "GA4GHViewer/Store/SeqFeature/1000genomes",
+         "type" : "CanvasFeatures",
+         "variantSetId" : 1,
+         "label" : "GA4GH 1kg (phase3)",
+         "callSetIds" : [],
+         "urlTemplate" : "https://rest.ensembl.org/ga4gh"
       }
-  ],
-  "highResolutionMode":2,
-  "plugins" : [
+   ],
+   "highResolutionMode" : 2,
+   "plugins" : [
       {
           "location" : "https://rawgit.com/elsiklab/multivariantviewer/master",
           "name" : "MultiVariantViewer"
@@ -27,5 +19,6 @@
           "location" : "https://rawgit.com/elsiklab/ga4ghviewer/master",
           "name" : "GA4GHViewer"
       }
-  ]
+  ],
+  "classicMenu": true
 }
