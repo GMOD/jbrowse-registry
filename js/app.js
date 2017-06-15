@@ -7,7 +7,10 @@ var spdxLicenses = require('spdx-licenses');
 angular
     .module('gmodPlugins', ['ui.bootstrap'])
     .config(['$locationProvider', function($locationProvider) {
-        $locationProvider.html5Mode(true);
+        $locationProvider.html5Mode({
+            enabled: true,
+            requireBase: false
+        });
     }])
     .controller("PluginController",['$scope', '$location', function($scope, $location) {
 
