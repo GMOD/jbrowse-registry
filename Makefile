@@ -31,7 +31,7 @@ deploy:
 	@rm -rf release
 	@mkdir release
 	# Load required data
-	@cp -Rv index.html build partials img demos .nojekyll  release
+	@cp -Rv index.html build img demos .nojekyll  release
 	# Build
 	@$(MAKE) build
 	# Push
