@@ -1,5 +1,9 @@
 ## Changelog
 
+- 0.5.3
+       - Fix sorting and searching ability
+- 0.5.2
+       - Add ability to search and link to specific terms
 - 0.5.1
        - Update deps
 - 0.5.0
