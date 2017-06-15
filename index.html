@@ -38,14 +38,14 @@
                 <nav class="navbar navbar-default">
                     <div class="container-fluid">
                         <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Filter plugins..." ng-model="searchTerm" aria-describedby="plug-addon">
+                            <input type="text" class="form-control" placeholder="Filter plugins..." ng-change="termChanged()"  ng-model="searchTerm" aria-describedby="plug-addon">
                             <span id="plug-addon" class="input-group-addon glyphicon glyphicon-search" aria-hidden="true"></span>
                         </div>
                         <div class="filter-group">
                            <form class="form-inline filter-form" role="form">
                                 <div class="form-group">
                                     <label>Sort By:</label>
-                                    <select class="form-control" ng-model="sortKey" ng-model-options="{ getterSetter: true }">
+                                    <select class="form-control" ng-model="sortKey">
                                         <option value="name" selected>Name</option>
                                         <option value="author">Author</option>
                                         <option value="added">Date added</option>
@@ -101,6 +101,14 @@
                 <ul uib-pagination class="pagination-sm pagination" total-items="filterData.length" ng-model="page"
                     ng-change="pageChanged()" previous-text="&lsaquo;" next-text="&rsaquo;" items-per-page=10></ul>
     
+                <div class="contact">
+                    <p>
+                        This project is licensed under the BSD-2-Clause license,
+                        and is avilable on <a href="https://github.com/GMOD/jbrowse-registry">GitHub</a>.
+                        Portions of this project was supported by the National
+                        Science Foundation under Grant Number 1565146
+                    </p>
+                </div>
             </section>
         </div>
     </body>
