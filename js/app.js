@@ -12,7 +12,7 @@ angular
     .controller("PluginController",['$scope', '$location', function($scope, $location) {
 
         $scope.page = $location.search().page || 1;
-        $scope.searchTerm = $location.search().search || '';
+        $scope.searchTerm = $location.search().term || '';
         $scope.plugins = plugin_data; 
         $scope.sortKey = 'name';
         $scope.order = '+';
@@ -23,7 +23,7 @@ angular
             $location.search('page='+$scope.page);
         };
         $scope.termChanged = function() {
-            $location.search('search='+$scope.searchTerm);
+            $location.search('term='+$scope.searchTerm);
         }
         $scope.plugins = plugin_data.map(function(elem){
             elem.id = elem.name.replace(/ /g, '-').replace(/[^A-Za-z0-9_-]/g, '');
