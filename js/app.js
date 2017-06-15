@@ -15,6 +15,7 @@ angular
         $scope.searchTerm = $location.search().search || '';
         $scope.plugins = plugin_data; 
         $scope.sortKey = 'name';
+        $scope.order = '+';
         $scope.numPerPage = 10;
         $scope.version = app_data.version;
         $scope.url = app_data.repository.url

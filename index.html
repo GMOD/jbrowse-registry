@@ -52,12 +52,19 @@
                                         <option value="license">License</option>
                                     </select>
                                 </div>
+                                <div class="form-group">		
+                                    <label>Order:</label>		
+                                    <select class="form-control" ng-model="order">		
+                                        <option value= '+' selected>Ascending</option>		
+                                        <option value= '-'>Descending</option>		
+                                    </select>		
+                                </div>
                             </form>
                         </div>
                     </div>
                 </nav>
                 <div class="plugin-list">
-                    <div ng-repeat="plugin in filterData = (plugins | filter : {name: searchTerm}) | orderBy:sortKey | limitTo:10:10*(page-1)" class="list-group-item">
+                    <div ng-repeat="plugin in filterData = (plugins | filter : {name: searchTerm}) | orderBy:order+sortKey | limitTo:10:10*(page-1)" class="list-group-item">
                          <div class="row plugin-title">
                             <div class="col-xs-9 plugin-name">
                                 <a href="{{plugin.location}}">
