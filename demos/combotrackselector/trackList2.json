@@ -1,0 +1,433 @@
+{
+    "dataset_id": "EPIC-CoGe",
+    "tracks": [
+        {
+            "baseUrl": "https://genomevolution.org/coge/api/v1/jbrowse/experiment/280/",
+            "storeClass": "JBrowse/Store/SeqFeature/REST",
+            "style": {
+                "variance_band_color": "rgba(0,0,0,0.3)",
+                "neg_color": "#D10076",
+                "pos_color": "#00948A",
+                "origin_color": "#888"
+            },
+            "category": "EPIC-CoGe Col-0",
+            "label": "280",
+            "type": "JBrowse/View/Track/Wiggle/XYPlot",
+            "key": "CG_Col-0_Stroud_2013"
+        },
+        {
+            "baseUrl": "https://genomevolution.org/coge/api/v1/jbrowse/experiment/244/",
+            "storeClass": "JBrowse/Store/SeqFeature/REST",
+            "style": {
+                "variance_band_color": "rgba(0,0,0,0.3)",
+                "neg_color": "#D10076",
+                "pos_color": "#00948A",
+                "origin_color": "#888"
+            },
+            "category": "EPIC-CoGe Col-0",
+            "label": "244",
+            "type": "JBrowse/View/Track/Wiggle/XYPlot",
+            "key": "CG_Col-0_Stroud_2013"
+        },
+        {
+            "baseUrl": "https://genomevolution.org/coge/api/v1/jbrowse/experiment/159/",
+            "storeClass": "JBrowse/Store/SeqFeature/REST",
+            "style": {
+                "variance_band_color": "rgba(0,0,0,0.3)",
+                "neg_color": "#D10076",
+                "pos_color": "#00948A",
+                "origin_color": "#888"
+            },
+            "category": "EPIC-CoGe Col-0",
+            "label": "159",
+            "type": "JBrowse/View/Track/Wiggle/XYPlot",
+            "key": "CG_Col-0_Stroud_2013"
+        },
+        {
+            "baseUrl": "https://genomevolution.org/coge/api/v1/jbrowse/experiment/376/",
+            "storeClass": "JBrowse/Store/SeqFeature/REST",
+            "style": {
+                "variance_band_color": "rgba(0,0,0,0.3)",
+                "neg_color": "#D10076",
+                "pos_color": "#00948A",
+                "origin_color": "#888"
+            },
+            "category": "EPIC-CoGe Col-0",
+            "label": "376",
+            "type": "JBrowse/View/Track/Wiggle/XYPlot",
+            "key": "CHG_Col-0_Stroud_2013"
+        },
+        {
+            "baseUrl": "https://genomevolution.org/coge/api/v1/jbrowse/experiment/348/",
+            "storeClass": "JBrowse/Store/SeqFeature/REST",
+            "style": {
+                "variance_band_color": "rgba(0,0,0,0.3)",
+                "neg_color": "#D10076",
+                "pos_color": "#00948A",
+                "origin_color": "#888"
+            },
+            "category": "EPIC-CoGe Col-0",
+            "label": "348",
+            "type": "JBrowse/View/Track/Wiggle/XYPlot",
+            "key": "CHG_Col-0_Stroud_2013"
+        },
+        {
+            "baseUrl": "https://genomevolution.org/coge/api/v1/jbrowse/experiment/285/",
+            "storeClass": "JBrowse/Store/SeqFeature/REST",
+            "style": {
+                "variance_band_color": "rgba(0,0,0,0.3)",
+                "neg_color": "#D10076",
+                "pos_color": "#00948A",
+                "origin_color": "#888"
+            },
+            "category": "EPIC-CoGe Col-0",
+            "label": "285",
+            "type": "JBrowse/View/Track/Wiggle/XYPlot",
+            "key": "CHG_Col-0_Stroud_2013"
+        },
+        {
+            "baseUrl": "https://genomevolution.org/coge/api/v1/jbrowse/experiment/368/",
+            "storeClass": "JBrowse/Store/SeqFeature/REST",
+            "style": {
+                "variance_band_color": "rgba(0,0,0,0.3)",
+                "neg_color": "#D10076",
+                "pos_color": "#00948A",
+                "origin_color": "#888"
+            },
+            "category": "EPIC-CoGe Col-0",
+            "label": "368",
+            "type": "JBrowse/View/Track/Wiggle/XYPlot",
+            "key": "CHH_Col-0_Stroud_2013"
+        },
+        {
+            "baseUrl": "https://genomevolution.org/coge/api/v1/jbrowse/experiment/235/",
+            "storeClass": "JBrowse/Store/SeqFeature/REST",
+            "style": {
+                "variance_band_color": "rgba(0,0,0,0.3)",
+                "neg_color": "#D10076",
+                "pos_color": "#00948A",
+                "origin_color": "#888"
+            },
+            "category": "EPIC-CoGe Col-0",
+            "label": "235",
+            "type": "JBrowse/View/Track/Wiggle/XYPlot",
+            "key": "CHH_Col-0_Stroud_2013"
+        },
+        {
+            "baseUrl": "https://genomevolution.org/coge/api/v1/jbrowse/experiment/224/",
+            "storeClass": "JBrowse/Store/SeqFeature/REST",
+            "style": {
+                "variance_band_color": "rgba(0,0,0,0.3)",
+                "neg_color": "#D10076",
+                "pos_color": "#00948A",
+                "origin_color": "#888"
+            },
+            "category": "EPIC-CoGe Col-0",
+            "label": "224",
+            "type": "JBrowse/View/Track/Wiggle/XYPlot",
+            "key": "CHH_Col-0_Stroud_2013"
+        },
+        {
+            "baseUrl": "https://genomevolution.org/coge/api/v1/jbrowse/experiment/965/",
+            "storeClass": "JBrowse/Store/SeqFeature/REST",
+            "style": {
+                "variance_band_color": "rgba(0,0,0,0.3)",
+                "neg_color": "#D10076",
+                "pos_color": "#00948A",
+                "origin_color": "#888"
+            },
+            "category": "EPIC-CoGe Col-0",
+            "label": "965",
+            "type": "JBrowse/View/Track/Wiggle/XYPlot",
+            "key": "RNA-seq_Col-0_Zemach_2013"
+        },
+        {
+            "baseUrl": "https://genomevolution.org/coge/api/v1/jbrowse/experiment/866/",
+            "storeClass": "JBrowse/Store/SeqFeature/REST",
+            "style": {
+                "variance_band_color": "rgba(0,0,0,0.3)",
+                "neg_color": "#D10076",
+                "pos_color": "#00948A",
+                "origin_color": "#888"
+            },
+            "category": "EPIC-CoGe Col-0",
+            "label": "866",
+            "type": "JBrowse/View/Track/Wiggle/XYPlot",
+            "key": "RNA-seq_Col-0_Zemach_2013"
+        },
+        {
+            "baseUrl": "https://genomevolution.org/coge/api/v1/jbrowse/experiment/958/",
+            "storeClass": "JBrowse/Store/SeqFeature/REST",
+            "style": {
+                "variance_band_color": "rgba(0,0,0,0.3)",
+                "neg_color": "#D10076",
+                "pos_color": "#00948A",
+                "origin_color": "#888"
+            },
+            "category": "EPIC-CoGe Col-0",
+            "label": "958",
+            "type": "JBrowse/View/Track/Wiggle/XYPlot",
+            "key": "mC_Col-0_Schmitz_2013"
+        },
+        {
+            "baseUrl": "https://genomevolution.org/coge/api/v1/jbrowse/experiment/988/",
+            "storeClass": "JBrowse/Store/SeqFeature/REST",
+            "style": {
+                "variance_band_color": "rgba(0,0,0,0.3)",
+                "neg_color": "#D10076",
+                "pos_color": "#00948A",
+                "origin_color": "#888"
+            },
+            "category": "EPIC-CoGe Col-0",
+            "label": "988",
+            "type": "JBrowse/View/Track/Wiggle/XYPlot",
+            "key": "CG_root-Col-0_Zemach_2013"
+        },
+        {
+            "baseUrl": "https://genomevolution.org/coge/api/v1/jbrowse/experiment/1178/",
+            "storeClass": "JBrowse/Store/SeqFeature/REST",
+            "style": {
+                "variance_band_color": "rgba(0,0,0,0.3)",
+                "neg_color": "#D10076",
+                "pos_color": "#00948A",
+                "origin_color": "#888"
+            },
+            "category": "EPIC-CoGe Col-0",
+            "label": "1178",
+            "type": "JBrowse/View/Track/Wiggle/XYPlot",
+            "key": "CG_root-Col-0_Zemach_2013"
+        },
+        {
+            "baseUrl": "https://genomevolution.org/coge/api/v1/jbrowse/experiment/877/",
+            "storeClass": "JBrowse/Store/SeqFeature/REST",
+            "style": {
+                "variance_band_color": "rgba(0,0,0,0.3)",
+                "neg_color": "#D10076",
+                "pos_color": "#00948A",
+                "origin_color": "#888"
+            },
+            "category": "EPIC-CoGe Col-0",
+            "label": "877",
+            "type": "JBrowse/View/Track/Wiggle/XYPlot",
+            "key": "CHG_root-Col-0_Zemach_2013"
+        },
+        {
+            "baseUrl": "https://genomevolution.org/coge/api/v1/jbrowse/experiment/1276/",
+            "storeClass": "JBrowse/Store/SeqFeature/REST",
+            "style": {
+                "variance_band_color": "rgba(0,0,0,0.3)",
+                "neg_color": "#D10076",
+                "pos_color": "#00948A",
+                "origin_color": "#888"
+            },
+            "category": "EPIC-CoGe Col-0",
+            "label": "1276",
+            "type": "JBrowse/View/Track/Wiggle/XYPlot",
+            "key": "CHG_root-Col-0_Zemach_2013"
+        },
+        {
+            "baseUrl": "https://genomevolution.org/coge/api/v1/jbrowse/experiment/909/",
+            "storeClass": "JBrowse/Store/SeqFeature/REST",
+            "style": {
+                "variance_band_color": "rgba(0,0,0,0.3)",
+                "neg_color": "#D10076",
+                "pos_color": "#00948A",
+                "origin_color": "#888"
+            },
+            "category": "EPIC-CoGe Col-0",
+            "label": "909",
+            "type": "JBrowse/View/Track/Wiggle/XYPlot",
+            "key": "CHH_root-Col-0_Zemach_2013"
+        },
+        {
+            "baseUrl": "https://genomevolution.org/coge/api/v1/jbrowse/experiment/1193/",
+            "storeClass": "JBrowse/Store/SeqFeature/REST",
+            "style": {
+                "variance_band_color": "rgba(0,0,0,0.3)",
+                "neg_color": "#D10076",
+                "pos_color": "#00948A",
+                "origin_color": "#888"
+            },
+            "category": "EPIC-CoGe Col-0",
+            "label": "1193",
+            "type": "JBrowse/View/Track/Wiggle/XYPlot",
+            "key": "CHH_root-Col-0_Zemach_2013"
+        },
+        {
+            "baseUrl": "https://genomevolution.org/coge/api/v1/jbrowse/experiment/959/",
+            "storeClass": "JBrowse/Store/SeqFeature/REST",
+            "style": {
+                "variance_band_color": "rgba(0,0,0,0.3)",
+                "neg_color": "#D10076",
+                "pos_color": "#00948A",
+                "origin_color": "#888"
+            },
+            "category": "EPIC-CoGe Col-0",
+            "label": "959",
+            "type": "JBrowse/View/Track/Wiggle/XYPlot",
+            "key": "CG_seedling-Col-0_Zemach_2013"
+        },
+        {
+            "baseUrl": "https://genomevolution.org/coge/api/v1/jbrowse/experiment/1176/",
+            "storeClass": "JBrowse/Store/SeqFeature/REST",
+            "style": {
+                "variance_band_color": "rgba(0,0,0,0.3)",
+                "neg_color": "#D10076",
+                "pos_color": "#00948A",
+                "origin_color": "#888"
+            },
+            "category": "EPIC-CoGe Col-0",
+            "label": "1176",
+            "type": "JBrowse/View/Track/Wiggle/XYPlot",
+            "key": "CG_seedling-Col-0_Zemach_2013"
+        },
+        {
+            "baseUrl": "https://genomevolution.org/coge/api/v1/jbrowse/experiment/979/",
+            "storeClass": "JBrowse/Store/SeqFeature/REST",
+            "style": {
+                "variance_band_color": "rgba(0,0,0,0.3)",
+                "neg_color": "#D10076",
+                "pos_color": "#00948A",
+                "origin_color": "#888"
+            },
+            "category": "EPIC-CoGe Col-0",
+            "label": "979",
+            "type": "JBrowse/View/Track/Wiggle/XYPlot",
+            "key": "CHG_seedling-Col-0_Zemach_2013"
+        },
+        {
+            "baseUrl": "https://genomevolution.org/coge/api/v1/jbrowse/experiment/943/",
+            "storeClass": "JBrowse/Store/SeqFeature/REST",
+            "style": {
+                "variance_band_color": "rgba(0,0,0,0.3)",
+                "neg_color": "#D10076",
+                "pos_color": "#00948A",
+                "origin_color": "#888"
+            },
+            "category": "EPIC-CoGe Col-0",
+            "label": "943",
+            "type": "JBrowse/View/Track/Wiggle/XYPlot",
+            "key": "CHG_seedling-Col-0_Zemach_2013"
+        },
+        {
+            "baseUrl": "https://genomevolution.org/coge/api/v1/jbrowse/experiment/922/",
+            "storeClass": "JBrowse/Store/SeqFeature/REST",
+            "style": {
+                "variance_band_color": "rgba(0,0,0,0.3)",
+                "neg_color": "#D10076",
+                "pos_color": "#00948A",
+                "origin_color": "#888"
+            },
+            "category": "EPIC-CoGe Col-0",
+            "label": "922",
+            "type": "JBrowse/View/Track/Wiggle/XYPlot",
+            "key": "CHH_seedling-Col-0_Zemach_2013"
+        },
+        {
+            "baseUrl": "https://genomevolution.org/coge/api/v1/jbrowse/experiment/1005/",
+            "storeClass": "JBrowse/Store/SeqFeature/REST",
+            "style": {
+                "variance_band_color": "rgba(0,0,0,0.3)",
+                "neg_color": "#D10076",
+                "pos_color": "#00948A",
+                "origin_color": "#888"
+            },
+            "category": "EPIC-CoGe Col-0",
+            "label": "1005",
+            "type": "JBrowse/View/Track/Wiggle/XYPlot",
+            "key": "CHH_seedling-Col-0_Zemach_2013"
+        },
+        {
+            "baseUrl": "https://genomevolution.org/coge/api/v1/jbrowse/experiment/1013/",
+            "storeClass": "JBrowse/Store/SeqFeature/REST",
+            "style": {
+                "variance_band_color": "rgba(0,0,0,0.3)",
+                "neg_color": "#D10076",
+                "pos_color": "#00948A",
+                "origin_color": "#888"
+            },
+            "category": "EPIC-CoGe Col-0",
+            "label": "1013",
+            "type": "JBrowse/View/Track/Wiggle/XYPlot",
+            "key": "MNase_Col-0_Zemach_2013"
+        },
+        {
+            "baseUrl": "https://genomevolution.org/coge/api/v1/jbrowse/experiment/1201/",
+            "storeClass": "JBrowse/Store/SeqFeature/REST",
+            "style": {
+                "variance_band_color": "rgba(0,0,0,0.3)",
+                "neg_color": "#D10076",
+                "pos_color": "#00948A",
+                "origin_color": "#888"
+            },
+            "category": "EPIC-CoGe Col-0",
+            "label": "1201",
+            "type": "JBrowse/View/Track/Wiggle/XYPlot",
+            "key": "RNA-seq_Col-0_Schmitz_2013"
+        },
+        {
+            "baseUrl": "https://genomevolution.org/coge/api/v1/jbrowse/experiment/notebook/758/",
+            "storeClass": "JBrowse/Store/SeqFeature/REST",
+            "style": {
+                "variance_band_color": "rgba(0,0,0,0.3)",
+                "neg_color": "#D10076",
+                "pos_color": "#00948A",
+                "origin_color": "#888"
+            },
+            "category": "EPIC-CoGe Col-0",
+            "label": "758",
+            "type": "JBrowse/View/Track/Wiggle/XYPlot",
+            "key": "Combination of Col-0 Meythlation"
+        }
+    ],
+    "trackSelector": {
+        "renameFacets": {
+            "key": "Name",
+            "label": "ID"
+        },
+        "displayColumns": [
+            "label",
+            "key",
+            "Gene Mutant",
+            "Description",
+            "Protocol",
+            "Processing",
+            "Pubmed ID",
+            "Lab Name",
+            "Platform",
+            "Samples",
+            "Data Source"
+        ],
+        "type": "Faceted",
+        "title": [
+            "EPIC-CoGe"
+        ],
+        "escapeHTMLInData": false
+    },
+    "trackMetadata": {
+        "sources": [
+            {
+                "url": "{dataRoot}/epiccogeMetaData.csv",
+                "type": "csv"
+            }
+        ],
+        "indexFacets": [
+            "Lab Name",
+            "Type",
+            "Platform",
+            "key",
+            "Description",
+            "label",
+            "Genome ID",
+            "Publication",
+            "Platform ID",
+            "Filename",
+            "Processing Description",
+            "Protocol",
+            "Series",
+            "Samples",
+            "Gene Mutant"
+        ]
+    },
+    "formatVersion": 1
+}

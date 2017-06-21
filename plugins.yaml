@@ -7,6 +7,7 @@
   location: https://github.com/cmdcolin/multibigwig
   name: multibigwig
   license: MIT
+  image: multibigwig.png
 - author: Colin Diesh
   description: |
     A JBrowse plugin for plotting GC Content and GC Skew. The plugin consists
@@ -19,12 +20,14 @@
   name: gccontent
   license: MIT
   demo: "gccontent&tracks=DNA,GCContentXY"
+  image: gccontent.png
 - author: Colin Diesh
   description: |
    A JBrowse plugin for indexing names with elasticsearch.
   gmodProject: JBrowse
   location: https://github.com/cmdcolin/jbrowse_elasticsearch
   name: jbrowse_elasticsearch
+  image: jbrowse_elasticsearch.png
 - author: Colin Diesh
   description: |
    A JBrowse plugin to load BED tabix, VCF tabix, or BAM as a blank track if
@@ -39,19 +42,25 @@
   gmodProject: JBrowse
   location: https://github.com/cmdcolin/gwasviewer
   name: gwasviewer
+  image: gwasviewer.png
+  demo: "gwasviewer"
 - author: Colin Diesh
   description: |
     A JBrowse plugin that fetches info from MyVariant.info and MyGene.info and
     displays them.
   gmodProject: JBrowse
   location: https://github.com/cmdcolin/myvariantviewer
+  image: myvariantviewer.png
   name: myvariantviewer
+  demo: "myvariantviewer&tracks=DNA,MyGenev3,clinvar"
 - author: Colin Diesh
   description: |
     A JBrowse plugin for viewing data from the GA4GH APIs.
   gmodProject: JBrowse
   location: https://github.com/cmdcolin/ga4ghviewer
   name: ga4ghviewer
+  demo: "ga4ghviewer&tracks=DNA,1000genomes"
+  image: ga4ghviewer.png
 - author: Colin Diesh
   description: |
     A JBrowse plugin for re-mapping coordinates "on the fly".
@@ -59,6 +68,7 @@
   location: https://github.com/cmdcolin/projectionplugin
   name: projectionplugin
   license: MIT
+  image: projectionplugin.png
 - author: Andrew Wilkey
   description: |
    A JBrowse plugin to allow the browser to enter fullscreen mode.
@@ -73,7 +83,7 @@
    search, track data search, track export, search export, create new
    experiments based on searches, and more.
   gmodProject: JBrowse
-  location: https://github.com/LyonsLab/coge/tree/master/web/js/jbrowse/plugins/CoGe
+  location: https://github.com/LyonsLab/CoGe_plugin
   name: CoGe JBrowse plugin
   license: BSD-2-Clause
 - author: Travis Saari
@@ -152,6 +162,7 @@
   license: MIT
   location: https://github.com/Arabidopsis-Information-Portal/SeqLighter
   name: SeqLighter
+  image: seqlighter.png
 - author: Maria Kim, Vivek Krishnakumar
   description: |
     ComboTrackSelector is a plugin to allow the co-existence of the
@@ -161,6 +172,8 @@
   license: MIT
   location: https://github.com/Arabidopsis-Information-Portal/ComboTrackSelector
   name: ComboTrackSelector
+  demo: "combotrackselector&loc=Chr1:25097503..25120860&tracks=DNA,Genes,1005,159,1013,285,1201"
+  image: combotrackselector.png
 - author: Keiran Raine
   description: |
     JBrowse plugin to display multiple BigWig tracks as a stacked proportion of count with
@@ -169,18 +182,21 @@
   license: AGPL-3.0
   location: https://github.com/cancerit/proportionalmultibw
   name: ProportionalMultiBw
+  image: proportionalmultibw.png
 - author: Colin Diesh
   description: |
     A JBrowse plugin for coloring BAM reads according to quality scores
   gmodProject: JBrowse
   location: https://github.com/cmdcolin/qualityglyphs
   name: qualityglyphs
+  image: qualityglyphs.png
 - author: Colin Diesh
   description: |
     A JBrowse plugin with a custom variant track for multi-VCF files and optionally plotting LD scores
   gmodProject: JBrowse
   location: https://github.com/cmdcolin/multivariantviewer
   name: multivariantviewer
+  image: multivariant.png
 - author: Colin Diesh
   description: |
     A JBrowse plugin to parse AGP files and display them
@@ -194,6 +210,7 @@
   license: ISC
   location: https://github.com/cmdcolin/gccoverage
   name: gccoverage
+  image: gccoverage.png
 - author: Brigitte Hofmeister
   description: |
     JBrowse plugin to makes configurable screenshots easy using PhantomJS Cloud
@@ -201,3 +218,126 @@
   location: https://github.com/bhofmei/jbplugin-screenshot
   name: Screenshots Plugin
   license: MIT
+- author: Eric Rasche
+  description: |
+    JBrowse plugin to render gff3 formatted Blast results nicely and provide useful help menus
+  gmodProject: JBrowse
+  location: https://github.com/TAMU-CPT/blastview
+  name: BlastView
+  license: AGPL-3.0
+  demo: "blastview&tracks=DNA,Feature,Blast&loc=ctgA:5235..6268"
+  image: blastviewer.png
+- author: Matthias Monfort, Charles Girardot
+  description: |
+    JBrowse plugin for dynamic visualization by automatic selection of
+    informative tracks from hundreds of genomic data sets. Dynamix takes
+    advantage of a priori knowledge to automatically display data tracks
+    with signal within a genomic region of interest. Dynamix also
+    introduces a new carousel view that optimises screen utilisation by
+    enabling users to independently scroll through groups of tracks.
+  gmodProject: JBrowse
+  location: https://git.embl.de/monfort/dynamix/
+  name: Dynamix
+  demo: "http://furlonglab.embl.de/DynamixDemo"
+  image: dynamix.png
+  license: MIT
+- author: Colin Diesh
+  description:  |
+      A JBrowse plugin to view multiple whole-genome alignment data
+  name: mafviewer
+  image: mafviewer.png
+  gmodProject: JBrowse
+  location: https://github.com/cmdcolin/mafviewer
+- author: Andrew Wilkey
+  description:  |
+      JBrowse plugin allowing users to manage a persistent list of bookmarks kept in localstorage
+  name: Bookmarks
+  image: bookmarks.png
+  gmodProject: JBrowse
+  location: https://github.com/awilkey/bookmarks-jbrowse/
+  license: MIT
+- author: Eric Rasche
+  description:  |
+      Dark/Flat theme for JBrowse
+  name: Dark/Flat Theme
+  image: darkflat.png
+  gmodProject: JBrowse
+  location: https://github.com/erasche/jbrowse-dark-theme/
+  license: GPL-3.0
+  demo: "darkflat&tracks=DNA,ExampleFeatures&loc=ctgA:1..6268"
+- author: Eric Rasche
+  description:  |
+      Afra/Minimalist theme for JBrowse
+  name: Minimalist Theme
+  image: minimalist.png
+  gmodProject: JBrowse
+  location: https://github.com/erasche/jbrowse-minimalist-theme/
+  license: GPL-3.0
+  demo: "minimalist&tracks=DNA,ExampleFeatures&loc=ctgA:1..6268"
+- author: JBrowse Themes
+  demo: ThemeComponent-Colors-BlackWhite-BlueGreen&tracks=DNA,ExampleFeatures&loc=ctgA:1..6268
+  description: A pleasant minimalist black, white and fresh colour scheme
+  image: ThemeComponent-Colors-BlackWhite-BlueGreen.png
+  license: GPL-3.0
+  location: https://github.com/jbrowse-themes/ThemeComponent-Colors-BlackWhite-BlueGreen
+  name: ThemeComponent-Colors-BlackWhite-BlueGreen
+  gmodProject: JBrowse
+- author: JBrowse Themes
+  demo: ThemeComponent-DisableGrid&tracks=DNA,ExampleFeatures&loc=ctgA:1..6268
+  description: A JBrowse 'Theme Component' which disables the grid
+  image: ThemeComponent-DisableGrid.png
+  license: GPL-3.0
+  location: https://github.com/jbrowse-themes/ThemeComponent-DisableGrid
+  gmodProject: JBrowse
+  name: ThemeComponent-DisableGrid
+- author: JBrowse Themes
+  demo: ThemeComponent-Flat&tracks=DNA,ExampleFeatures&loc=ctgA:1..6268
+  description: Flatten many curved surfaces
+  image: ThemeComponent-Flat.png
+  license: GPL-3.0
+  location: https://github.com/jbrowse-themes/ThemeComponent-Flat
+  name: ThemeComponent-Flat
+  gmodProject: JBrowse
+- author: JBrowse Themes
+  demo: ThemeComponent-RearrangedRulers&tracks=DNA,ExampleFeatures&loc=ctgA:1..6268
+  description: Rearranges the rulers to be next to each other, and removes the "zoomed
+    region" blue bar.
+  image: ThemeComponent-RearrangedRulers.png
+  license: GPL-3.0
+  location: https://github.com/jbrowse-themes/ThemeComponent-RearrangedRulers
+  name: ThemeComponent-RearrangedRulers
+  gmodProject: JBrowse
+- author: JBrowse Themes
+  demo: ThemeComponent-RightAlignedControls&tracks=DNA,ExampleFeatures&loc=ctgA:1..6268
+  description: Align the zoom controls to the right.
+  image: ThemeComponent-RightAlignedControls.png
+  license: GPL-3.0
+  location: https://github.com/jbrowse-themes/ThemeComponent-RightAlignedControls
+  name: ThemeComponent-RightAlignedControls
+  gmodProject: JBrowse
+- author: Eric Rasche
+  name: Site-wide Notices
+  demo: sitewide
+  description: |
+      This allows you to proactively inform users about upcoming maintenance
+      events. It displays a highly visible button and a popup with further
+      information loaded from a JSON file, allowing your users to plan around
+      downtimes.
+  image: sitewide.png
+  license: AGPL-3.0
+  location: https://github.com/TAMU-CPT/SitewideNotices/
+  gmodProject: JBrowse
+- author: Colin Diesh
+  description: |
+    JBrowse plugin to make a list of tracks from a base track config and list of file URLs
+  gmodProject: JBrowse
+  location: https://github.com/cmdcolin/manytracks
+  license: ISC
+  name: manytracks
+- author: BioNano Genomics
+  description: |
+      JBrowse plugin to support BioNano Genomics files
+  gmodProject: JBrowse
+  location: https://github.com/bionanogenomics/JBrowsePlugin/
+  license: MIT
+  name: BioNanoGenomics

@@ -1,50 +1,45 @@
 var angular = require('angular');
-require('angular-utils-pagination');
-var plugin_data = require('json!./plugins.json');
-var app_data = require('json!../package.json');
+var angularui = require('angular-ui-bootstrap');
+var plugin_data = require('./plugins.json');
+var app_data = require('../package.json');
 var spdxLicenses = require('spdx-licenses');
 
-var app = angular.module('plugD', [
-    'angularUtils.directives.dirPagination'
-]);
+angular
+    .module('gmodPlugins', ['ui.bootstrap'])
+    .controller("PluginController",['$scope', '$location', function($scope, $location) {
 
-app.controller("PluginController",function(){
-});
-
-app.directive("pluginList", function(){
-    return {
-        restrict:"E",
-        templateUrl:"partials/plugin-list.html",
-        controller: function(){
-            this.filter = {gmod:"", term:"", perPage:5};
-            this.sortKey = "name";
-            this.order ='+';
-            this.plugins = plugin_data.map(function(elem){
-                elem.id = elem.name.replace(/ /g, '-').replace(/[^A-Za-z0-9_-]/g, '')
-                return elem;
-            });
-        },
-        controllerAs:"plug"
-    }
-});
-
-app.directive("versionInfo", function(){
-    return {
-        restrict:"E",
-        template: '<a style="color:white" href="{{ url }}">Version {{ version }}</a>',
-        link: function(scope, el){
-            scope.version = app_data.version;
-            scope.url = app_data.repository.url;
+        $scope.page = $location.search().page || 1;
+        $scope.searchTerm = $location.search().term || '';
+        $scope.plugins = plugin_data; 
+        $scope.sortKey = 'name';
+        $scope.order = '+';
+        $scope.numPerPage = 10;
+        $scope.version = app_data.version;
+        $scope.url = app_data.repository.url
+        $scope.pageChanged = function() {
+            $location.search('page='+$scope.page);
+        };
+        $scope.termChanged = function() {
+            $location.search('term='+$scope.searchTerm);
         }
-    }
-});
-
-app.filter("spdx_formatter", ["$sce", function($sce){
-	return function(input) {
-		if (input) {
-			var license = spdxLicenses.spdx(input);
-			return $sce.trustAs('html', license.name.replace(/^"/, '').replace(/"$/, '').replace(/""/g, '"'));
-		}
-		return;
-	};
-}]);
+        $scope.plugins = plugin_data.map(function(elem){
+            elem.id = elem.name.replace(/ /g, '-').replace(/[^A-Za-z0-9_-]/g, '');
+            if(elem.location.indexOf("https://github.com/")>=0){
+                elem.abbrev = elem.location.substring("https://github.com/".length) ;
+                elem.type = "github";
+            }
+            if(elem.location.indexOf("https://bitbucket.org/")>=0){
+                elem.abbrev = elem.location.substring("https://bitbucket.org/".length) ;
+                elem.type = "bitbucket";
+            }
+            return elem;
+        });
+    }]).filter("spdx_formatter", ["$sce", function($sce){
+        return function(input) {
+            if (input) {
+                var license = spdxLicenses.spdx(input);
+                return $sce.trustAs('html', license.name.replace(/^"/, '').replace(/"$/, '').replace(/""/g, '"'));
+            }
+            return;
+        };
+    }]);

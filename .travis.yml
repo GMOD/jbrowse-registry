@@ -11,4 +11,4 @@ script:
   - make build
 
 after_success:
-  - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then bash ./.deploy.sh; fi'
+  - 'if [ "$TRAVIS_PULL_REQUEST" = "false" -a "$TRAVIS_BRANCH" = "master" ]; then bash ./.deploy.sh; fi'

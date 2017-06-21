@@ -33,6 +33,13 @@ doc.map(function(el){
 			exit_code = 2;
 		}
 	}
+
+	if(el.image !== undefined){
+		if(!fs.existsSync("img/" + el.image)){
+			console.log("ERROR: " + el.name + " declared an image but no associated file was included. Please add the missing image img/" + el.image);
+			exit_code = 2;
+		}
+	}
 });
 
 process.exit(exit_code);
