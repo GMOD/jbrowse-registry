@@ -342,6 +342,7 @@
   gmodProject: JBrowse
   location: https://github.com/bionanogenomics/JBrowsePlugin/
   license: MIT
+  name: BioNanoGenomics
 - author: Brigitte Hofmeister
   description: |
       JBrowse plugin that allows the user to manually switch between 
