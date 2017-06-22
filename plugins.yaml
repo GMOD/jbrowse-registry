@@ -115,29 +115,30 @@
 - author: Brigitte Hofmeister
   description: |
     Adds a 'select all from category' checkbox to all categories in
-    hierarchical tracklist  When you check/uncheck the box, it applies to all
-    tracks in that category and any subcategories
+    hierarchical tracklist.  When user checks/unchecks the box, it applies to 
+    all tracks in that category and any subcategories
   gmodProject: JBrowse
   location: https://github.com/bhofmei/jbplugin-hierarchicalcheckbox
   name: Hierarchical Checkbox Plugin
+  image: hierarchicalcheckbox.png
   license: MIT
 - author: Brigitte Hofmeister
   description: |
-    This plugin is to be used to add a menu option for XYPlot and MethylXYPlot
-    tracks that allows the user to change the y-axis limits without needing to
+    This plugin allows the user to change the y-axis limits without needing to
     edit the config file.
   gmodProject: JBrowse
   location: https://github.com/bhofmei/jbplugin-trackscores
   name: Track Score Plugin
+  image: trackscores.png
   license: MIT
 - author: Brigitte Hofmeister
   description: |
-    This plugin is to be used with whole-genome bisulfite sequencing data.
-    Unlike almost all other browsers, this pluging allows you to see all
-    methylation contexts on one track.
+    JBrowse plugin for whole-genome bisulfite sequencing data.
+    This pluging allows the user to see all methylation contexts on one track.
   gmodProject: JBrowse
   location: https://github.com/bhofmei/jbplugin-methylation
   name: Methylation Plugin
+  image: methylation.png
   license: Apache-2.0
 - author: Brigitte Hofmeister
   description: |
@@ -146,6 +147,7 @@
   location: https://github.com/bhofmei/jbplugin-smallrna
   name: Small RNA Plugin
   license: MIT
+  image: smallrna.png
 - author: Andrew Wilkey
   description: |
     Moves scrollbar on genome viewer up DOM to make it play well with others
@@ -340,4 +342,21 @@
   gmodProject: JBrowse
   location: https://github.com/bionanogenomics/JBrowsePlugin/
   license: MIT
-  name: BioNanoGenomics
+- author: Brigitte Hofmeister
+  description: |
+      JBrowse plugin that allows the user to manually switch between 
+      feature/read views and histogram views
+  gmodProject: JBrowse
+  location: https://github.com/bhofmei/jbplugin-seqview.git
+  license: MIT
+  image: seqviews.png
+  name: Sequence Views
+- author: Brigitte Hofmeister
+  description: |
+      JBrowse plugin that show nucleotide density as a heatmap for one or more
+      sequence contexts in one track. 
+  gmodProject: JBrowse
+  location: https://github.com/bhofmei/jbplugin-nucdens
+  license: MIT
+  image: nucleotidedensity.png
+  name: Nucleotide Density
