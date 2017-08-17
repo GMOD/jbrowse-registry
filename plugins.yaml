@@ -361,3 +361,11 @@
   license: MIT
   image: nucleotidedensity.png
   name: Nucleotide Density
+- author: Colin Diesh
+  description: |
+      A JBrowse plugin to color the features and DNA track according the coding frame
+  gmodProject: JBrowse
+  location: https://github.com/cmdcolin/colorbycds
+  license: ISC
+  name: colorbycds
+  image: colorbycds.png
