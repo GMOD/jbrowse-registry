@@ -10,7 +10,7 @@ angular
 
         $scope.page = $location.search().page || 1;
         $scope.searchTerm = $location.search().term || '';
-        $scope.plugins = plugin_data; 
+        $scope.plugins = plugin_data;
         $scope.sortKey = 'name';
         $scope.order = '+';
         $scope.numPerPage = 10;
@@ -36,10 +36,10 @@ angular
         });
     }]).filter("spdx_formatter", ["$sce", function($sce){
         return function(input) {
-            if (input) {
+            if (input && input !== 'NONE') {
                 var license = spdxLicenses.spdx(input);
                 return $sce.trustAs('html', license.name.replace(/^"/, '').replace(/"$/, '').replace(/""/g, '"'));
-            }
+            } else { return $sce.trustAs('html', "No license"); }
             return;
         };
     }]);
