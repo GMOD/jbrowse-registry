@@ -5,10 +5,10 @@ var yaml = require('js-yaml'),
 	spdxLicenses = require('spdx-licenses');
 
 const required_fields = [
-	'name', 'author', 'description', 'location', 'gmodProject',
+	'name', 'author', 'description', 'location', 'gmodProject', 'license',
 ];
 const recommended_fields = [
-	'image', 'license',
+	'image',
 ];
 
 var doc = yaml.safeLoad(fs.readFileSync('plugins.yaml', 'utf8'));
@@ -27,10 +27,12 @@ doc.map(function(el){
 	})
 
 	if(el.license !== undefined){
-		var license = spdxLicenses.spdx(el.license);
-		if(!license){
-			console.log("ERROR: " + el.name + " has a non-SPDX license identifier. Please see the list here https://spdx.org/licenses/");
-			exit_code = 2;
+		if(el.license !== 'NONE'){
+			var license = spdxLicenses.spdx(el.license);
+			if(!license){
+				console.log("ERROR: " + el.name + " has a non-SPDX license identifier. Please see the list here https://spdx.org/licenses/");
+				exit_code = 2;
+			}
 		}
 	}
 
