@@ -28,6 +28,7 @@
   location: https://github.com/cmdcolin/jbrowse_elasticsearch
   name: jbrowse_elasticsearch
   image: jbrowse_elasticsearch.png
+  license: NONE
 - author: Colin Diesh
   description: |
    A JBrowse plugin to load BED tabix, VCF tabix, or BAM as a blank track if
@@ -44,6 +45,7 @@
   name: gwasviewer
   image: gwasviewer.png
   demo: "gwasviewer"
+  license: NONE
 - author: Colin Diesh
   description: |
     A JBrowse plugin that fetches info from MyVariant.info and MyGene.info and
@@ -53,6 +55,7 @@
   image: myvariantviewer.png
   name: myvariantviewer
   demo: "myvariantviewer&tracks=DNA,MyGenev3,clinvar"
+  license: NONE
 - author: Colin Diesh
   description: |
     A JBrowse plugin for viewing data from the GA4GH APIs.
@@ -61,6 +64,7 @@
   name: ga4ghviewer
   demo: "ga4ghviewer&tracks=DNA,1000genomes"
   image: ga4ghviewer.png
+  license: NONE
 - author: Colin Diesh
   description: |
     A JBrowse plugin for re-mapping coordinates "on the fly".
@@ -192,6 +196,7 @@
   location: https://github.com/cmdcolin/qualityglyphs
   name: qualityglyphs
   image: qualityglyphs.png
+  license: NONE
 - author: Colin Diesh
   description: |
     A JBrowse plugin with a custom variant track for multi-VCF files and optionally plotting LD scores
@@ -199,12 +204,14 @@
   location: https://github.com/cmdcolin/multivariantviewer
   name: multivariantviewer
   image: multivariant.png
+  license: NONE
 - author: Colin Diesh
   description: |
     A JBrowse plugin to parse AGP files and display them
   gmodProject: JBrowse
   location: https://github.com/cmdcolin/agp_parser
   name: agp_parser
+  license: NONE
 - author: Colin Diesh
   description: |
     A JBrowse plugin to view GC content % overlaid on a BAM coverage plot
@@ -251,6 +258,7 @@
   image: mafviewer.png
   gmodProject: JBrowse
   location: https://github.com/cmdcolin/mafviewer
+  license: NONE
 - author: Andrew Wilkey
   description:  |
       JBrowse plugin allowing users to manage a persistent list of bookmarks kept in localstorage
