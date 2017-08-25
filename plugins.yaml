@@ -376,3 +376,4 @@
   gmodProject: Apache-2.0
   location: https://github.com/bhofmei/jbplugin-wigglesvg
   name: Wiggle SVG Plot Plugin
+  license: Apache-2.0
