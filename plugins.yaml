@@ -385,3 +385,11 @@
   location: https://github.com/bhofmei/jbplugin-wigglesvg
   name: Wiggle SVG Plot Plugin
   license: Apache-2.0
+- author: Deepak Unni
+  description: |
+    A simple JBrowse plugin that renames the key of a displayed track to a value from track metadata
+  gmodProject: JBrowse
+  location: https://github.com/deepakunni3/RenameTracks
+  name: Rename Tracks
+  license: MIT
+  image: renametracks.png
