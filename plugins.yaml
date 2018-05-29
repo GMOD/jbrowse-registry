@@ -228,7 +228,7 @@
   name: Screenshots Plugin
   image: screenshot.png
   license: Apache-2.0
-- author: Eric Rasche
+- author: Helena Rasche
   description: |
     JBrowse plugin to render gff3 formatted Blast results nicely and provide useful help menus
   gmodProject: JBrowse
@@ -267,7 +267,7 @@
   gmodProject: JBrowse
   location: https://github.com/awilkey/bookmarks-jbrowse/
   license: MIT
-- author: Eric Rasche
+- author: Helena Rasche
   description:  |
       Dark/Flat theme for JBrowse
   name: Dark/Flat Theme
@@ -276,7 +276,7 @@
   location: https://github.com/erasche/jbrowse-dark-theme/
   license: GPL-3.0
   demo: "darkflat&tracks=DNA,ExampleFeatures&loc=ctgA:1..6268"
-- author: Eric Rasche
+- author: Helena Rasche
   description:  |
       Afra/Minimalist theme for JBrowse
   name: Minimalist Theme
@@ -326,7 +326,7 @@
   location: https://github.com/jbrowse-themes/ThemeComponent-RightAlignedControls
   name: ThemeComponent-RightAlignedControls
   gmodProject: JBrowse
-- author: Eric Rasche
+- author: Helena Rasche
   name: Site-wide Notices
   demo: sitewide
   description: |
