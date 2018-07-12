@@ -402,3 +402,10 @@
   name: Variant Effect
   license: MIT
   image: varianteffect.png
+- author: NAL i5k workspace
+  description: |
+    A JBrowse plugin to color the features according the feature type. This plugin is derived from the Apollo plugin DraggableHTMLFeatures.
+  gmodProject: JBrowse
+  location: https://github.com/NAL-i5K/ColorByType
+  name: ColorByType
+  license: PD, BSD-3-Clause
