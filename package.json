@@ -21,12 +21,12 @@
     "node-sass": "^4.5.3",
     "raw-loader": "^0.5.1",
     "sass-loader": "^6.0.5",
+    "spdx-expression-validate": "^1.0.2",
     "style-loader": "^0.18.2",
     "webpack": "^2.6.1",
     "webpack-dev-server": "^2.4.5"
   },
   "dependencies": {
-    "angular-ui-bootstrap": "^2.5.0",
-    "spdx-expression-validate": "^1.0.2"
+    "angular-ui-bootstrap": "^2.5.0"
   }
 }
