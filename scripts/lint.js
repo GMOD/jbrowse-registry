@@ -2,7 +2,7 @@
 var yaml = require('js-yaml'),
 	fs   = require('fs'),
 	exit_code = 0,
-	spdxLicenses = require('spdx-licenses');
+  spdxValidate = require('spdx-expression-validate');
 
 const required_fields = [
 	'name', 'author', 'description', 'location', 'gmodProject', 'license',
@@ -28,7 +28,7 @@ doc.map(function(el){
 
 	if(el.license !== undefined){
 		if(el.license !== 'NONE'){
-			var license = spdxLicenses.spdx(el.license);
+			var license = spdxValidate(el.license);
 			if(!license){
 				console.log("ERROR: " + el.name + " has a non-SPDX license identifier. Please see the list here https://spdx.org/licenses/");
 				exit_code = 2;
