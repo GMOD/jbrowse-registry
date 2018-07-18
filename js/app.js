@@ -3,6 +3,7 @@ var angularui = require('angular-ui-bootstrap');
 var plugin_data = require('./plugins.json');
 var app_data = require('../package.json');
 var spdxLicenses = require('spdx-licenses');
+var spdxParse = require('spdx-expression-parse');
 
 angular
     .module('gmodPlugins', ['ui.bootstrap'])
@@ -37,8 +38,22 @@ angular
     }]).filter("spdx_formatter", ["$sce", function($sce){
         return function(input) {
             if (input && input !== 'NONE') {
-                var license = spdxLicenses.spdx(input);
-                return $sce.trustAs('html', license.name.replace(/^"/, '').replace(/"$/, '').replace(/""/g, '"'));
+                function recLi(obj,str){
+                    for (var k in obj){
+                        if(typeof obj[k] == 'object' && obj[k] !== null){
+                            str = recLi(obj[k],str);
+                        } else if (k == 'conjunction'){
+                            str += obj[k].toUpperCase() +' ';
+                        } else if (k == 'license'){
+                            var license = spdxLicenses.spdx(obj[k]);
+                            str += license.name.replace(/^"/, '').replace(/"$/, '').replace(/""/g, '"')+' ';
+                        }
+                    }
+                    return str;
+                }
+                var liStr = recLi(spdxParse(input),'');
+                liStr = liStr.trim();
+              return $sce.trustAs('html', liStr);
             } else { return $sce.trustAs('html', "No license"); }
             return;
         };
