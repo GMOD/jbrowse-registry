@@ -1,4 +1,4 @@
-# The JBrowse Plugin Directory [![Build Status](https://travis-ci.org/GMOD/jbrowse-registry.svg?branch=master)](https://travis-ci.org/GMOD/jbrowse-registry)
+# The JBrowse Plugin Directory [![Build Status](https://travis-ci.org/GMOD/jbrowse-registry.svg?branch=master)](https://travis-ci.org/GMOD/jbrowse-registry) [![Greenkeeper badge](https://badges.greenkeeper.io/GMOD/jbrowse-registry.svg)](https://greenkeeper.io/)
 
 [https://gmod.github.io/jbrowse-registry/](https://gmod.github.io/jbrowse-registry/)
 
