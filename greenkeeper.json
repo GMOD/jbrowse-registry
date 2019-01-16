@@ -1,0 +1,10 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "demos/JBrowse-1.12.1/src/JBrowse/package.json",
+        "package.json"
+      ]
+    }
+  }
+}
