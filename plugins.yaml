@@ -409,3 +409,10 @@
   location: https://github.com/NAL-i5K/ColorByType
   name: ColorByType
   license: (CC0-1.0 AND BSD-3-Clause)
+- author: Colin Diesh
+  description: |
+    A JBrowse plugin to highlight areas of a wiggle track based on another feature track
+  gmodProject: JBrowse
+  location: https://github.com/cmdcolin/wigglehighlighter
+  name: WiggleHighlighter
+  license: MIT
