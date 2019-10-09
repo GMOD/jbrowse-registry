@@ -416,3 +416,11 @@
   location: https://github.com/cmdcolin/wigglehighlighter
   name: WiggleHighlighter
   license: MIT
+- author: Scott Cain
+  description: |
+    A JBrowse plugin to find sequence motifs with a Position Weight Matrix
+  gmodProject: JBrowse
+  location: https://github.com/scottcain/MotifSearch
+  name: MotifSearch
+  license: Apache-2.0
+  image: MotifSearch-small.png
