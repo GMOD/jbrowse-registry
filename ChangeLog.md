@@ -1,5 +1,7 @@
 ## Changelog
 
+- 0.6.0
+       - Upgrade to webpack 4
 - 0.5.3
        - Fix sorting and searching ability
 - 0.5.2

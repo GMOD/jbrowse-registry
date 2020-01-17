@@ -1,6 +1,6 @@
 {
   "name": "jbrowse-plugin-repo",
-  "version": "0.5.3",
+  "version": "0.6.0",
   "description": "Plugin directory for jbrowse",
   "repository": {
     "type": "git",
@@ -10,14 +10,14 @@
   "license": "BSD-2-Clause",
   "devDependencies": {
     "angular": "^1.7.9",
-    "css-loader": "^0.28.4",
-    "extract-text-webpack-plugin": "^2.1.2",
+    "css-loader": "^3.0.0",
     "file-loader": "^0.11.2",
     "gh-pages": "^0.12.0",
     "html-loader": "^0.4.5",
     "http-server": "^0.10.0",
     "js-yaml": "^3.8.4",
     "json-loader": "^0.5.4",
+    "mini-css-extract-plugin": "^0.9.0",
     "node-sass": "^4.5.3",
     "raw-loader": "^0.5.1",
     "sass-loader": "^6.0.5",
@@ -25,7 +25,8 @@
     "spdx-expression-validate": "^1.0.2",
     "spdx-licenses": "0.0.3",
     "style-loader": "^0.18.2",
-    "webpack": "^2.6.1",
+    "webpack": "^4.0.0",
+    "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.1.11"
   },
   "dependencies": {
