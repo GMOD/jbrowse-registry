@@ -1,4 +1,5 @@
 language: node_js
+node_js: 10
 before_install:
   - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then openssl aes-256-cbc -K $encrypted_304834ef0277_key -iv $encrypted_304834ef0277_iv -in .deploy.key.enc -out deploy.key -d; fi'
 

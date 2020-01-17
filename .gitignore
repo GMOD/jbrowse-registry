@@ -56,3 +56,4 @@ js/plugins.json
 build/
 release
 .DS_Store
+*.swp
