@@ -431,3 +431,10 @@
   location: https://github.com/cmdcolin/jbrowse_piechart
   name: PiechartPlugin
   license: MIT
+- author: Colin Diesh
+  description: |
+    A JBrowse plugin to design primers. Requires setup with primer3 running on the server. Original author Nathan Liles. Note: somewhat tricky to setup
+  gmodProject: JBrowse
+  location: https://github.com/cmdcolin/JBrowse-PrimerDesigner
+  name: PrimerDesigner
+  license: MIT
