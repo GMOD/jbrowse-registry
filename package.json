@@ -9,7 +9,7 @@
   "author": "Andrew Wilkey",
   "license": "BSD-2-Clause",
   "devDependencies": {
-    "angular": "^1.7.9",
+    "angular": "^1.8.0",
     "css-loader": "^3.4.2",
     "file-loader": "^0.11.2",
     "gh-pages": "^0.12.0",
